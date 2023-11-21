@@ -1,0 +1,368 @@
+
+
+@media (orientation: portrait) {
+  body {
+    background-color: gray;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .map {
+    display: none;
+  }
+  .noti {
+    display: none;
+  }
+  .panel {
+    display: none;
+  }
+  .end {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .btn:hover, .start:hover, .end:hover, .weather:hover {
+    display: none;
+  }
+  .btn:hover, .start:hover, .end:hover, .weather:hover {
+    display: none;
+  }
+  .source {
+    display: none;
+  }
+
+#rotate-message {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 100%;
+  padding-top: 80%;
+
+  z-index: 9999;
+}
+   
+}
+
+@media (orientation: landscape) {
+  body 
+  {
+    width: auto;
+    /* background: linear-gradient(to right, #c71585, #c71585); */
+    background: linear-gradient(to right, #10d3ff, #fff00f);
+    overflow: hidden;
+  }
+  #rotate-message {
+  display: none;
+  }
+  .logo {
+    position: relative;
+    top: 0;
+    width: 85%;
+    height: auto;
+  }
+  .map
+  {
+    position:absolute;
+    width: 90%;
+    height: 96%;
+    top: 2%;
+    right: 5%;
+    border-radius: 10px;
+    z-index: -5;
+    image-rendering: crisp-edges;
+  }
+  .goBack {
+    background-color: #616161;
+    position: relative;
+    cursor: pointer;
+    width: 1.3%;
+    height: 96%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: none;
+    z-index: 5;
+    writing-mode: vertical-rl; 
+    text-align: right; 
+    letter-spacing: 5em;
+    color: white;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+  }
+  #map-container {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .source{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-family: sans-serif;
+    font-size: 1.6vh;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e0dfdc;
+    background-color: #616161;
+    letter-spacing: .1em;
+    text-align: center;
+  }
+  #map-svg {
+    z-index: 0;
+  }
+  .noti {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 83.5%;
+    text-align: justify;
+    font-size: 1.2vw;
+    color: beige;
+    z-index: 2;
+  }
+  .panel {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .start
+  {
+    background-color: lightcyan;
+    position: relative;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 2vw; 
+    text-align: center;
+    font-family: 'Bahnschrift';
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .end
+  {
+    background-color: lightcyan;
+    position: relative;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 2vw; 
+    text-align: center;
+    font-family: 'Bahnschrift';
+    margin-top: 1%;
+    margin-bottom: 1%;
+    letter-spacing: 0em;
+  }
+  .weather
+  {
+    background-color: lightcyan;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Bahnschrift';
+    font-size: 1.6vw;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 84%;
+    text-align: center;
+    color: gray;
+  }
+  .btn {
+    background-color: lightblue;
+    width: 60%;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: double;
+    font-family: 'Bahnschrift';
+    position: relative;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  .btn:hover, .start:hover, .end:hover, .weather:hover
+  {
+    background-color: beige;
+    color: black ;
+  }
+  .toilet {
+    width: 45%;
+    height: 12%;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  #toileticon {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    image-rendering: auto;
+  }
+  .parkinglot {
+    width: 45%;
+    height: 12%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  #parkingicon {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    image-rendering: auto;
+  }
+  @media (min-width: 1000px) {
+    .start {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .end {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .weather {
+      border-width: 5px;
+      border-radius: 50px;
+    }
+    .btn {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .toilet {
+      border-width: 5px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+    .parkinglot {
+      border-width: 5px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 999px) {
+    .start {
+      border-width: 2px;
+      border-radius: 50px;
+    }
+    .end {
+      border-width: 2px;
+      border-radius: 50px;
+    }
+    .weather {
+      width: 90%;
+      border-width: 1.5px;
+      border-radius: 50px;
+      border-color: #616161;
+    }
+    .btn {
+      border-width: 1.5px;
+      border-color: #616161;
+      border-radius: 50px;
+    }
+    .toilet {
+      border-width: 2px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+    .parkinglot {
+      border-width: 2px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+  }
+  
+  
+
+
+  
+  .getLocationBtn {
+    position: absolute;
+    bottom: 10% ;
+  }
+  .test {
+    position: absolute;
+    bottom: 0% ;
+  }
+  /* Add a new class for hiding */
+  .panel.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  /* Add a new class for showing */
+  .panel.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+  }
+
+/* Add a new class for hiding */
+  .map.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+/* Add a new class for showing */
+  .map.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+  }
+
+}
+
+
+/* .noteicon {
+    position: absolute;
+    background-color: green;
+    top: 4%;
+    bottom: 4%;
+    right: 83%;
+    left: 0;
+    border-radius: 10px;
+    z-index: 0;
+  }
+  #noteicon-mess {
+    position: absolute;
+    top: 26%;
+    left: 55%;
+  } */
+  /* .stair {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    background-color: yellow;
+    border: 5px;
+    border: 2px solid lightcyan;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin-top: 20%;
+    z-index: 10;
+  } */

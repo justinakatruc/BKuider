@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>HCMUT-MAP</title>
+  <link rel="stylesheet" type="text/css" href="D:/nhap 1.0/main.css">
+  <script type="text/javascript" src="D:/nhap 1.0/dijkstra.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/A1.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/A2.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/A3.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/A4.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/A5.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B1.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B2.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B3.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B4.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B6.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B7.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B8.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B9.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B10.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B11.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/B12.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/C1.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/C4.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/C5.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/C6.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/inout.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/toilet.js"></script>
+  <script type="text/javascript" src="D:/nhap 1.0/parking.js"></script>
+</head>
+<body>
+  <div id="rotate-message">
+    <p>Please rotate your device for better experiences.</p>
+  </div>
+  <div class="panel">
+    <img class="logo" src="logo.png">
+    <label>
+      <input class="start" id="start" type="text" placeholder="Start">
+    </label>
+    <label>
+      <input class="end" id="end" type="text" placeholder="End">
+    </label>
+    <select class="weather" id="weather" onchange="weather()">
+      <option class="option" value="" disabled selected>Weather</option>
+      <option class="option" value="Sunny"><b>Sunny</b></option>
+      <option class="option" value="Raining"><b>Raining</b></option>
+    </select>
+    <button type="submit" onclick="visualizePath()" class="btn" id="go">Go</button> 
+    <button class="toilet" id="toilet" onclick="toiletShow()">
+      <img id="toileticon" src="toilet.png" alt="Toilet Icon">
+    </button>
+    <button class="parkinglot" id="parking" onclick="parkingShow()" alt="Parking Lot button">
+      <img id="parkingicon" src="parking.png" alt="Parking Lot Icon">
+    </button>
+  </div>
+  <!-- <div class = "noti">
+    <b>Skip "Start" to use GPS.</b>
+  </div> -->
+  <div class="map hidden" id="map-container">
+    <img class="map" alt="sa ban truong" src="D:/nhap 1.0/map.png"/>
+    <svg class="map" id="map-svg"></svg>
+    <button class="goBack" onclick="goBack()">
+      <td class='cellStyle'>
+        <span class='spanStyle'>
+          RETURN
+        </span>
+      </td>
+    </button>
+    <p class="source">Nguồn ảnh: Trường ĐH Bách Khoa - ĐHQG-HCM</p>
+  </div>
+  <!-- <script>
+    document.addEventListener("keydown", e => {
+      if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode != 116 && e.keyCode <= 123)) {
+        e.stopPropagation();
+        e.preventDefault();
+      }
+    })
+  </script> -->
+  <!-- <div class = "noteicon" id="noteicon-container">
+    <b id="noteicon-mess">Start</b>
+    <svg id="noteicon-svg"></svg>
+  </div> -->
+  <!-- <button class="getLocationBtn" id="getLocationBtn" type="button">Get My Location</button> -->
+  <!-- <div class="test" id="coordinates">Latitude: N/A, Longitude: N/A</div> -->
+  <script src="D:/nhap 1.0/script.js"></script>
+  <script src="D:/nhap 1.0/location.js"></script>
+</body>
+</html>
