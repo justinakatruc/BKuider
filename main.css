@@ -2,9 +2,7 @@
 
 @media (orientation: portrait) {
   body {
-    background-color: gray;
-    overflow: hidden;
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .map {
     display: none;
@@ -38,12 +36,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   font-size: 100%;
   padding-top: 80%;
-
   z-index: 9999;
 }
    
