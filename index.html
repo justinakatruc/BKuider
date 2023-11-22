@@ -4,6 +4,7 @@
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>BKuider - Be your guider</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/main.css">
   <script type="text/javascript" src="/dijkstra.js"></script>
   <script type="text/javascript" src="/A1.js"></script>
@@ -35,7 +36,7 @@
     <p>Please rotate your device for better experiences.</p>
   </div>
   <div class="panel">
-    <img class="logo" src="logo.png">
+    <img class="logo" src="/images/logo.png">
     <label>
       <input class="start" id="start" type="text" placeholder="Start">
     </label>
@@ -49,17 +50,17 @@
     </select>
     <button type="submit" onclick="visualizePath()" class="btn" id="go">Go</button> 
     <button class="toilet" id="toilet" onclick="toiletShow()">
-      <img id="toileticon" src="toilet.png" alt="Toilet Icon">
+      <img id="toileticon" src="/images/toilet.png" alt="Toilet Icon">
     </button>
     <button class="parkinglot" id="parking" onclick="parkingShow()" alt="Parking Lot button">
-      <img id="parkingicon" src="parking.png" alt="Parking Lot Icon">
+      <img id="parkingicon" src="/images/parking.png" alt="Parking Lot Icon">
     </button>
   </div>
   <!-- <div class = "noti">
     <b>Skip "Start" to use GPS.</b>
   </div> -->
   <div class="map hidden" id="map-container">
-    <img class="map" alt="sa ban truong" src="/map.png"/>
+    <img class="map" alt="sa ban truong" src="images/map.png"/>
     <svg class="map" id="map-svg"></svg>
     <button class="goBack" onclick="goBack()">RETURN</button>
     <p class="source">Nguồn ảnh: Trường ĐH Bách Khoa - ĐHQG-HCM</p>
