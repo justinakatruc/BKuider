@@ -667,11 +667,7 @@ function visualizePath() {
 	// drawPath (pathNodes);
 
 
-	var input = document.getElementById("start");
-	input = input.value;
-	input = input.toLowerCase();
-	input = input.replace(/\s/g, '');
-	const inputresult = removeDiacritics(input);
+	const inputresult = starti();
 	var destination = end();
 
 	if (destination === "a5-hta5" || inputresult === "a5-hta5") {

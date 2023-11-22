@@ -49,7 +49,6 @@
   body 
   {
     width: auto;
-    /* background: linear-gradient(to right, #c71585, #c71585); */
     background: linear-gradient(to right, #10d3ff, #fff00f);
     overflow: hidden;
   }
@@ -133,9 +132,8 @@
     top: 0;
     left: 40%;
     width: 20%;
-    height: auto;
+    height: 100%;
     text-align: center;
-    border-radius: 10px;
     z-index: 1;
   }
   .start
@@ -198,7 +196,7 @@
   }
   .toilet {
     width: 45%;
-    height: 12%;
+    height: auto;
     margin-top: 20%;
     margin-bottom: 1%;
     background-color: lightblue;
@@ -216,7 +214,7 @@
   }
   .parkinglot {
     width: 45%;
-    height: 12%;
+    height: auto;
     margin-top: 1%;
     margin-bottom: 1%;
     background-color: lightblue;

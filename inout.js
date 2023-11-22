@@ -6,31 +6,29 @@ function weather() {
 
 
 function go() {
-  var start = document.getElementById("start");
-  var input = start.value;
-
-  input = input.toLowerCase();
-
-  input = input.replace(/\s/g, '');
-
-  const startresult = removeDiacritics(input);
-
-  const dijkstraResult = graph.Dijkstra(startresult, end());
+  const dijkstraResult = graph.Dijkstra(starti(), end());
   return dijkstraResult;
+}
+
+function starti() {
+  var input = document.getElementById("start");
+	input = input.value;
+	input = input.toLowerCase();
+	input = input.replace(/\s/g, '');
+	const inputDia = removeDiacritics(input);
+	const inputtrans = transform(inputDia);
+	const startresult = inputtrans;
+  return startresult;
 }
 
 function end() {
   var end = document.getElementById("end");
   var input = end.value;
-
   input = input.toLowerCase();
-
-  input = input.replace(/\s/g, '');
-  
-  removeDiacritics(input);
-  
-  const endresult = removeDiacritics(input);
-
+	input = input.replace(/\s/g, '');
+	const inputDia = removeDiacritics(input);
+	const inputtrans = transform(inputDia);
+	const endresult = inputtrans;
   return endresult;
 }
 
@@ -53,11 +51,13 @@ function removeDiacritics(input) {
 
     'í': 'i', 'ì': 'i', 'ỉ': 'i', 'ĩ': 'i', 'ị': 'i',
 
+    'ý': 'y', 'ỳ':'y', 'ỷ':'y', 'ỹ':'y', 'ỵ':'y',
+
     'đ': 'd'
   };
 
-  // Use a regular expression to match diacritic characters and replace them
-  input = input.replace(/[úùủũụưứừửữựéèẻẽẹêếềểễệóòỏõọôốồổỗộơớờởỡợáàảãạăắằẳẵặâấầẩẫậíìỉĩịđ]/g, function(match) {
+  // Use a regular expression to match diacritic characters and replace them 
+  input = input.replace(/[úùủũụưứừửữựéèẻẽẹêếềểễệóòỏõọôốồổỗộơớờởỡợáàảãạăắằẳẵặâấầẩẫậíìỉĩịýỳỷỹỵđ]/g, function(match) {
     return diacriticMap[match];
   });
 
@@ -65,4 +65,36 @@ function removeDiacritics(input) {
   return input;
 }
 
-
+function transform(input) {
+  //gates
+  if (input === "cong1" || input === "congdau" || input === "congltk" || input === "conglythuongkiet" || input === "congchinh" || input === "maingate" || input === "firstgate" || input === "ltk" || input === "lythuongkiet" || input === "ltkgate" || input === "lythuongkietgate") {
+    input = "gate1";
+    return input;
+  }
+  else if (input === "cong2" || input === "conggiua" || input === "congthtgiua" || input === "congtohienthanhgiua" || input === "secondgate") {
+    input = "gate2";
+    return input;
+  }
+  else if (input === "cong3" || input === "congcuoi" || input === "congduoi" || input === "congthtduoi" || input === "congtohienthanhduoi" || input === "thirdgate") {
+    input = "gate3";
+    return input;
+  }
+  //specialplaces
+  else if (input === "hoitruonga5" || input === "hoitruong" || input === "a5-hoitruonga5") {
+    input = "a5-hta5";
+    return input;
+  }
+  else if (input === "b6-civilengineering") {
+    input = "b6-ce";
+    return input;
+  }
+  else if (input === "hoitruongb4" || input === "b4-hoitruongb4") {
+    input = "b4-htb4";
+    return input;
+  }
+  else if (input === "hoitruonga4" || input === "a4-hoitruonga4") {
+    input = "a4-hta4";
+    return input;
+  }
+  else return input;
+}

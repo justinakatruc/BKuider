@@ -94,7 +94,7 @@ class WeightedGraph {
     const previous = {};
     let path = [];
     let smallest;
-    let totalWeight = 0;
+    // let totalWeight = 0;
 
     for (let vertex in this.adjacencyList) {
       if (vertex === start) {
@@ -112,7 +112,7 @@ class WeightedGraph {
       if (smallest === finish) {
         while (previous[smallest]) {
           path.push(smallest);
-          totalWeight += this.getWeight(previous[smallest], smallest);
+          // totalWeight += this.getWeight(previous[smallest], smallest);
           smallest = previous[smallest];
         }
         break;
@@ -134,12 +134,12 @@ class WeightedGraph {
     path.push(smallest);
     while (previous[smallest]) {
       path.push(previous[smallest]);
-      totalWeight += this.getWeight(previous[smallest], smallest);
+      // totalWeight += this.getWeight(previous[smallest], smallest);
       smallest = previous[smallest];
     }
 
-    // Log the total weight
-    console.log("Total Weight:", totalWeight);
+    // // Log the total weight
+    // console.log("Total Weight:", totalWeight);
 
     return path.reverse();
   }
