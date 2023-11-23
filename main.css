@@ -3,6 +3,8 @@
 @media (orientation: portrait) {
   body {
     background: linear-gradient(to right, #10d3ff, #fff00f);
+    background-color: #616161;
+    overflow: hidden;
   }
   .map {
     display: none;
