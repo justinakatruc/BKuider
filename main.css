@@ -2,7 +2,7 @@
 
 @media (orientation: portrait) {
   body {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, #10d3ff, #fff00f);
   }
   .map {
     display: none;
@@ -10,50 +10,17 @@
   .noti {
     display: none;
   }
-  .panel {
-    display: none;
-  }
-  .end {
-    display: none;
-  }
-  .btn {
-    display: none;
-  }
-  .btn:hover, .start:hover, .end:hover, .weather:hover {
-    display: none;
-  }
-  .btn:hover, .start:hover, .end:hover, .weather:hover {
-    display: none;
-  }
   .source {
     display: none;
   }
-
-#rotate-message {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: center;
-  font-size: 100%;
-  padding-top: 80%;
-  z-index: 9999;
-}
-   
-}
-
-@media (orientation: landscape) {
-  body 
-  {
-    width: auto;
-    background: linear-gradient(to right, #10d3ff, #fff00f);
-    overflow: hidden;
-  }
-  #rotate-message {
-  display: none;
+  .panel {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
   }
   .logo {
     position: relative;
@@ -61,12 +28,216 @@
     width: 85%;
     height: auto;
   }
+  .start
+  {
+    background-color: lightcyan;
+    position: relative;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 3vh; 
+    text-align: center;
+    font-family: 'Bahnschrift';
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .end
+  {
+    background-color: lightcyan;
+    position: relative;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 3vh; 
+    text-align: center;
+    font-family: 'Bahnschrift';
+    margin-top: 1%;
+    margin-bottom: 1%;
+    letter-spacing: 0em;
+  }
+  .weather
+  {
+    background-color: lightcyan;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Bahnschrift';
+    font-size: 2.6vh;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
+    color: gray;
+  }
+  .btn {
+    background-color: lightblue;
+    width: 60%;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 3vh;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: double;
+    font-family: 'Bahnschrift';
+    position: relative;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  .btn:hover, .start:hover, .end:hover, .weather:hover
+  {
+    background-color: beige;
+    color: black ;
+  }
+  .toilet {
+    width: 45%;
+    height: auto;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  #toileticon {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    image-rendering: auto;
+  }
+  .parkinglot {
+    width: 45%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  #parkingicon {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    image-rendering: auto;
+  }
+  @media (min-width: 1000px) {
+    .start {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .end {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .weather {
+      border-width: 5px;
+      border-radius: 50px;
+    }
+    .btn {
+      border-width: 6px;
+      border-radius: 50px;
+    }
+    .toilet {
+      border-width: 5px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+    .parkinglot {
+      border-width: 5px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 999px) {
+    .start {
+      border-width: 2px;
+      border-radius: 50px;
+    }
+    .end {
+      border-width: 2px;
+      border-radius: 50px;
+    }
+    .weather {
+      width: 80%;
+      border-width: 1.5px;
+      border-radius: 50px;
+      border-color: #616161;
+    }
+    .btn {
+      border-width: 1.5px;
+      border-color: #616161;
+      border-radius: 50px;
+    }
+    .toilet {
+      border-width: 2px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+    .parkinglot {
+      border-width: 2px;
+      border-color: #616161;
+      border-radius: 20px;
+    }
+  }
+
+  .rotate-message {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #616161;
+    text-align: center;
+    font-size: 110%;
+    padding-top: 80%;
+    z-index: 0;
+    font-style: italic;
+    font-weight:900;
+  }  
+  .rotate-message.visible {
+    opacity: 1;
+  }
+  .rotate-message.hidden {
+    opacity: 0;
+  }
+  .panel.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  /* Add a new class for showing */
+  .panel.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+  body 
+  {
+    width: auto;
+    background: linear-gradient(to right, #10d3ff, #fff00f);
+  }
+  .rotate-message {
+  display: none;
+  }
   .map
   {
     position:absolute;
     width: 90%;
     height: 96%;
-    top: 2%;
+    top: 0;
     right: 5%;
     border-radius: 10px;
     z-index: -5;
@@ -93,7 +264,7 @@
   }
   #map-container {
     width: 100%;
-    height: 100%;
+    height: 110%;
     right: 0;
     top: 0;
     border-radius: 0;
@@ -135,6 +306,12 @@
     height: 100%;
     text-align: center;
     z-index: 1;
+  }
+  .logo {
+    position: relative;
+    top: 0;
+    width: 85%;
+    height: auto;
   }
   .start
   {
@@ -231,6 +408,19 @@
     image-rendering: auto;
   }
   @media (min-width: 1000px) {
+    .goBackL {
+      display: none;
+    }
+    .map {
+      top: 2%;
+    }
+    #map-container {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      border-radius: 0;
+    }
     .start {
       border-width: 6px;
       border-radius: 50px;
@@ -259,6 +449,27 @@
     }
   }
   @media (max-width: 999px) {
+    .goBackL {
+      background-color: transparent;
+      position: absolute;
+      top: 30%;
+      cursor: pointer;
+      border-style: none;
+      width: 10%;
+      height: 30%;
+      left: 2%;
+      z-index: 5;
+    }
+    #returnicon {
+      width: 100%;
+      z-index: 999;
+    }
+    .goBack {
+      top: 0;
+    }
+    .source {
+      bottom: 2%;
+    }
     .start {
       border-width: 2px;
       border-radius: 50px;
@@ -328,7 +539,6 @@
     pointer-events: auto;
     transition: opacity 0s ease;
   }
-
 }
 
 

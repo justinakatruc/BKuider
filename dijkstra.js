@@ -293,7 +293,7 @@ graph.addEdge("b4-d","b6-b",5);
 graph.addVertex("b3-c");
 graph.addVertex("b1-rs");
 
-graph.addEdge("b3-c","b1-rs",7);
+graph.addEdge("b3-c","b1-rs",8);
 
 //cantin
 graph.addVertex("cantin");
@@ -476,7 +476,7 @@ function weatherconverter() {
 		graph.addEdge("thuvien","nhaxegv",6);
 		graph.addEdge("gate2","thuvien",10);
 		graph.addEdge("4c","thuvien",12);
-		graph.addEdge("b3-c","b1-rs",7);
+		graph.addEdge("b3-c","b1-rs",8);
 		graph.addEdge("1a","b3-b",2);
 		graph.addEdge("1a","b3-a",5);
 	}
