@@ -900,7 +900,11 @@ let goClicked = false;
 const transformGo = document.getElementById('go');
 
 transformGo.addEventListener('click', function () {
-  goClicked = true;
+	goClicked = true;
+	let landscape = window.matchMedia("(orientation: landscape)").matches;
+	if (landscape && goClicked) {
+		visualizePath();
+	}
 });
 
 let toiletClicked = false;
@@ -918,5 +922,3 @@ const transformParking = document.getElementById('parking');
 transformParking.addEventListener('click', function () {
   parkingClicked = true;
 });
-
-
