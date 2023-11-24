@@ -34,6 +34,7 @@ function toiletShow() {
         'toilet-b3-fm': {x:containerWidth*0.211,y:containerHeight*0.48},
         'toilet-b6-m': {x:containerWidth*0.455,y:containerHeight*0.3},
         'toilet-b6-fm': {x:containerWidth*0.459,y:containerHeight*0.3},
+        'toilet-b8-m': {x:containerWidth*0.6,y:containerHeight*0.475},
         'toilet-b8-fm': {x:containerWidth*0.555,y:containerHeight*0.475},
         'toilet-b9-m': {x:containerWidth*0.555,y:containerHeight*0.53},
         'toilet-c4-m': {x:containerWidth*0.635,y:containerHeight*0.23},
@@ -49,7 +50,7 @@ function toiletShow() {
         const regex1 = /^[a-z]{6}-[a-z]\d{2}-m$/
         const match = toiletNodes[i].match(regex);
         const match1 = toiletNodes[i].match(regex1);
-        const circleNumbers = [4, 4, 2, 2, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5];
+        const circleNumbers = [4, 4, 2, 2, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5];
         const radiusPercentage = 1.5;
         const fontSizePercentage = 3;
     

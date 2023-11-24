@@ -501,18 +501,12 @@
       border-radius: 20px;
     }
   }
-  
-  
-
-
-  
-  .getLocationBtn {
-    position: absolute;
-    bottom: 10% ;
-  }
-  .test {
-    position: absolute;
-    bottom: 0% ;
+  .contact {
+    position: relative;
+    top: 98.1%;
+    margin-left: 40%;
+    font-size: 100%;
+    z-index: 9999;
   }
   /* Add a new class for hiding */
   .panel.hidden {
