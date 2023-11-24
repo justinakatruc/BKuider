@@ -245,7 +245,6 @@ graph.addEdge("7d","m7",3);
 graph.addEdge("7d","8d",6);
 graph.addEdge("m7","8e",7);
 graph.addEdge("m7","7e",4);
-graph.addEdge("7e","gate2",8);
 graph.addEdge("7e","gate3",15);
 graph.addEdge("8a","8b",2);
 graph.addEdge("8a","9d",2);
@@ -295,6 +294,11 @@ graph.addVertex("b1-rs");
 
 graph.addEdge("b3-c","b1-rs",8);
 
+graph.addVertex("a3");
+graph.addVertex("b10-ls");
+
+graph.addEdge("a3","b10-ls",8);
+
 //cantin
 graph.addVertex("cantin");
 graph.addVertex("b6-a");
@@ -326,6 +330,18 @@ graph.addVertex("a3");
 graph.addEdge("gate2","nhaxegv",3);
 graph.addEdge("7e","nhaxegv",3);
 graph.addEdge("a3","nhaxegv",3);
+//special
+graph.addVertex("a2-tr");
+graph.addVertex("thuvien");
+graph.addVertex("a5-rs");
+graph.addVertex("b9");
+graph.addVertex("a4-fe");
+
+graph.addEdge("nhaxegv","a2-tr",4);
+graph.addEdge("a4-fe","a2-tr",4);
+graph.addEdge("b9","a4-fe",6);
+graph.addEdge("b9","a2-tr",4);
+graph.addEdge("thuvien","a5-rs",4);
 
 //sanbongda
 graph.addVertex("sanbongda");
@@ -359,7 +375,7 @@ graph.addEdge("9e","c3",5);
 //c7
 graph.addVertex("c7");
 
-graph.addEdge("gate3","c7",21);
+graph.addEdge("10e","c7",18);
 graph.addEdge("10d","c7",2);
 
 function weatherconverter() {
@@ -382,12 +398,17 @@ function weatherconverter() {
 		graph.addEdge("2d","4d",1100);
 		graph.addEdge("3a","3b",500);
 		graph.addEdge("3a","5a",700);
+		graph.addEdge("3b","4b",400);
 		graph.addEdge("4c","4d",700);
-		graph.addEdge("4e","gate2",1000);
-		graph.addEdge("5a","5b",400);
+		graph.addEdge("5a","5b",500);
 		graph.addEdge("5a","6b",500);
+		graph.addEdge("7a","7b",500);
 		graph.addEdge("7b","7c",400);
 		graph.addEdge("7e","m7",400);
+		graph.addEdge("7e","4c",900);
+		graph.addEdge("7e","gate3",1500);
+		graph.addEdge("m7","8e",700);
+		graph.addEdge("8a","8b",200);
 		graph.addEdge("9d","9c",300);
 		graph.addEdge("9c","9b",300);
 		graph.addEdge("9c","10c",900);
@@ -396,6 +417,8 @@ function weatherconverter() {
 		graph.addEdge("10a","10b",400);
 		graph.addEdge("10b","10c",300);
 		graph.addEdge("10c","10d",600);
+		graph.addEdge("10d","10e",1400);
+		graph.addEdge("10e","gate3",600);
 
 		graph.addEdge("2d.4d","2d",600);
 		graph.addEdge("2d.4d","4d",600);
@@ -417,9 +440,13 @@ function weatherconverter() {
 		graph.addEdge("b3-c","b1-rs",700);
 		graph.addEdge("1a","b3-b",200);
 		graph.addEdge("1a","b3-a",500);
+		graph.addEdge("a4","4c",700);
+		graph.addEdge("10d","b7",1100);
+		graph.addEdge("10e","b7",700);
+		graph.addEdge("10e","c7",1800);
+		graph.addEdge("10d","c7",200);
+		graph.addEdge("7e","nhaxegv",300);
 		//solution2 (add wanted edges and weights that were not defined before)
-		graph.addEdge("4d","a1l",2);
-		graph.addEdge("a1m","thuvien",5);
 		graph.addEdge("7d","b8-ls",2);
 	}
 	else if (weather() === "Sunny") {
@@ -441,12 +468,17 @@ function weatherconverter() {
 		graph.addEdge("2d","4d",11);
 		graph.addEdge("3a","3b",5);
 		graph.addEdge("3a","5a",7);
+		graph.addEdge("3b","4b",4);
 		graph.addEdge("4c","4d",7);
-		graph.addEdge("4e","gate2",10);
 		graph.addEdge("5a","5b",4);
 		graph.addEdge("5a","6b",5);
+		graph.addEdge("7a","7b",5);
 		graph.addEdge("7b","7c",4);
 		graph.addEdge("7e","m7",4);
+		graph.addEdge("7e","4c",9);
+		graph.addEdge("7e","gate3",15);
+		graph.addEdge("m7","8e",7);
+		graph.addEdge("8a","8b",2);
 		graph.addEdge("9d","9c",3);
 		graph.addEdge("9c","9b",3);
 		graph.addEdge("9c","10c",9);
@@ -455,6 +487,8 @@ function weatherconverter() {
 		graph.addEdge("10a","10b",4);
 		graph.addEdge("10b","10c",3);
 		graph.addEdge("10c","10d",6);
+		graph.addEdge("10d","10e",14);
+		graph.addEdge("10e","gate3",6);
 
 		graph.addEdge("2d.4d","2d",6);
 		graph.addEdge("2d.4d","4d",6);
@@ -467,8 +501,6 @@ function weatherconverter() {
 		graph.addEdge("7e","thuvien",7);
 		graph.addEdge("7e","a4-fe",5);
 		graph.addEdge("thuvien","a4-fe",5);
-		graph.addEdge("4d","a1l",1);
-		graph.addEdge("a1m","thuvien",4);
 		graph.addEdge("7d","b8-ls",2);
 		graph.addEdge("b4","3b",5);
 		graph.addEdge("a1","gate2",5);
@@ -479,6 +511,12 @@ function weatherconverter() {
 		graph.addEdge("b3-c","b1-rs",8);
 		graph.addEdge("1a","b3-b",2);
 		graph.addEdge("1a","b3-a",5);
+		graph.addEdge("a4","4c",7);
+		graph.addEdge("10d","b7",11);
+		graph.addEdge("10e","b7",7);
+		graph.addEdge("10e","c7",18);
+		graph.addEdge("10d","c7",2);
+		graph.addEdge("7e","nhaxegv",3);
 	}
 
 	function clearWeather() {
@@ -499,12 +537,17 @@ function weatherconverter() {
 		graph.clearSpecificEdges("2d","4d");
 		graph.clearSpecificEdges("3a","3b");
 		graph.clearSpecificEdges("3a","5a");
+		graph.clearSpecificEdges("3b","4b");
 		graph.clearSpecificEdges("4c","4d");
-		graph.clearSpecificEdges("4e","gate2");
 		graph.clearSpecificEdges("5a","5b");
 		graph.clearSpecificEdges("5a","6b");
+		graph.clearSpecificEdges("7a","7b");
 		graph.clearSpecificEdges("7b","7c");
 		graph.clearSpecificEdges("7e","m7");
+		graph.clearSpecificEdges("7e","4c");
+		graph.clearSpecificEdges("7e","gate3");
+		graph.clearSpecificEdges("m7","8e");
+		graph.clearSpecificEdges("8a","8b");
 		graph.clearSpecificEdges("9a","9b");
 		graph.clearSpecificEdges("9b","9c");
 		graph.clearSpecificEdges("9b","10b");
@@ -513,6 +556,8 @@ function weatherconverter() {
 		graph.clearSpecificEdges("10a","10b");
 		graph.clearSpecificEdges("10b","10c");
 		graph.clearSpecificEdges("10c","10d");
+		graph.clearSpecificEdges("10d","10e");
+		graph.clearSpecificEdges("10e","gate3");
 
 		graph.clearSpecificEdges("2d.4d","2d");
 		graph.clearSpecificEdges("2d.4d","4d");
@@ -524,8 +569,6 @@ function weatherconverter() {
 		graph.clearSpecificEdges("3b","b4-c");
 		graph.clearSpecificEdges("7e","thuvien");
 		graph.clearSpecificEdges("7e","a4-fe");
-		graph.clearSpecificEdges("4d","a1l");
-		graph.clearSpecificEdges("a1m","thuvien");
 		graph.clearSpecificEdges("thuvien","a4-fe");
 		graph.clearSpecificEdges("thuvien","7e");
 		graph.clearSpecificEdges("a4-fe","7e");
@@ -539,5 +582,11 @@ function weatherconverter() {
 		graph.clearSpecificEdges("b3-c","b1-rs");
 		graph.clearSpecificEdges("1a","b3-b");
 		graph.clearSpecificEdges("1a","b3-a");
+		graph.clearSpecificEdges("a4","4c");
+		graph.clearSpecificEdges("10d","b7");
+		graph.clearSpecificEdges("10e","b7");
+		graph.clearSpecificEdges("10e","c7");
+		graph.clearSpecificEdges("10d","c7");
+		graph.clearSpecificEdges("7e","nhaxegv");
 	}
 }

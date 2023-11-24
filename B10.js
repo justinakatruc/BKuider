@@ -19,6 +19,7 @@ graph.addVertex("b10-ls");
 //entrance
 graph.addEdge("gate3","b10",20);
 graph.addEdge("7e","b10",20);
+graph.addEdge("8e","b10-ls",4);
 graph.addEdge("gate3","b10-rs",2);
 graph.addEdge("7e","b10-ls",10);
 //floor2

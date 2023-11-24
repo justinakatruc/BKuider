@@ -96,5 +96,13 @@ function transform(input) {
     input = "a4-hta4";
     return input;
   }
+  else if (input === "phongyte") {
+    input = "b7";
+    return input;
+  }
+  else if (input === "a2") {
+    input = "thuvien";
+    return input;
+  }
   else return input;
 }

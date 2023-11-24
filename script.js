@@ -73,11 +73,11 @@ function visualizePath() {
 		'c1':{x:containerWidth*0.57,y:containerHeight*0.2},
 		'c2':{x:containerWidth*0.65,y:containerHeight*0.42},
 		'c3':{x:containerWidth*0.65,y:containerHeight*0.31},
+		'c7':{x:containerWidth*0.72,y:containerHeight*0.3},
 		'b7':{x:containerWidth*0.75,y:containerHeight*0.4},		
 		'b9':{x:containerWidth*0.58,y:containerHeight*0.53},	
 		'b12':{x:containerWidth*0.61,y:containerHeight*0.26},
 		//b7
-		'phongyte':{x:containerWidth*0.73,y:containerHeight*0.38},
 		'b7':{x:containerWidth*0.73,y:containerHeight*0.38},
 		//a1
 		'a1':{x:containerWidth*0.49,y:containerHeight*0.66},
@@ -86,6 +86,7 @@ function visualizePath() {
 		//a2
 		'thuvien':{x:containerWidth*0.5,y:containerHeight*0.595},
 		'a2':{x:containerWidth*0.5,y:containerHeight*0.595},
+		'a2-tr':{x:containerWidth*0.535,y:containerHeight*0.58},
 		//b1
 		//stair
 		'b1':{x:containerWidth*0.198,y:containerHeight*0.625},
