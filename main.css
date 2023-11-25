@@ -501,9 +501,6 @@
       border-radius: 20px;
     }
   }
-  .contact {
-    display: none;
-  }
   /* Add a new class for hiding */
   .panel.hidden {
     opacity: 0;
