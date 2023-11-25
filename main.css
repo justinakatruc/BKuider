@@ -3,7 +3,21 @@
 @media (orientation: portrait) {
   body {
     background: linear-gradient(to right, #10d3ff, #fff00f);
-    background-color: #616161;
+  }
+  :root {
+    --background-light: #f7f7f7;
+    --background-dark: #616161;
+    /* Other color variables */
+  }
+  
+  body {
+    background-color: var(--background-light);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--background-dark);
+    }
   }
   .map {
     display: none;
@@ -231,7 +245,10 @@
     background: linear-gradient(to right, #10d3ff, #fff00f);
   }
   .rotate-message {
-  display: none;
+    display: none;
+  }
+  .contact {
+    display: none;
   }
   .map
   {
