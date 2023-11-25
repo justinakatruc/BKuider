@@ -502,11 +502,7 @@
     }
   }
   .contact {
-    position: relative;
-    top: 98.1%;
-    margin-left: 40%;
-    font-size: 100%;
-    z-index: 9999;
+    display: none;
   }
   /* Add a new class for hiding */
   .panel.hidden {
