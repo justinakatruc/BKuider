@@ -310,7 +310,7 @@ graph.addVertex("b4-e");
 graph.addEdge("b6-a","cantin",3);
 graph.addEdge("b6-b","cantin",5);
 graph.addEdge("b4-e","cantin",6);
-graph.addEdge("3a","cantin",2);
+graph.addEdge("3l","cantin",2);
 
 //nhaxetht
 // graph.addVertex("nhaxetht");

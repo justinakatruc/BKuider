@@ -7,8 +7,10 @@ graph.addVertex("b5-c");
 graph.addVertex("b5-d");
 graph.addVertex("b5-e");
 graph.addVertex("b6-gdb6");
+graph.addVertex("cantin");
 
 //entrance
+graph.addEdge("b5-a","cantin",3);
 graph.addEdge("b5-a","3l",4);
 graph.addEdge("b5-a","b5-b",2);
 graph.addEdge("b5-b","b5-c",2);

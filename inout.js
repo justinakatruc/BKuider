@@ -84,6 +84,10 @@ function transform(input) {
     input = "a5-hta5";
     return input;
   }
+  else if (input === "giangduongb6" || input === "b6-giangduongb6" || input === "giangduonghoabinh" || input === "hoabinhauditorium") {
+    input = "b6-gdb6";
+    return input;
+  }
   else if (input === "b6-civilengineering") {
     input = "b6-ce";
     return input;
@@ -100,8 +104,12 @@ function transform(input) {
     input = "b7";
     return input;
   }
-  else if (input === "a2") {
+  else if (input === "a2" || input === "library") {
     input = "thuvien";
+    return input;
+  }
+  else if (input === "foodcourt" || input === "canteen") {
+    input = "cantin";
     return input;
   }
   else return input;
