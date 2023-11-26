@@ -167,6 +167,7 @@ graph.addVertex("2c");
 graph.addVertex("2d");
 graph.addVertex("2e");
 graph.addVertex("3a");
+graph.addVertex("3l");
 graph.addVertex("3b");
 graph.addVertex("4a");
 graph.addVertex("4b");
@@ -220,6 +221,7 @@ graph.addEdge("2d","2e",3);
 graph.addEdge("2d","4d",11);
 // graph.addEdge("2e","4e",11); (not walkable)
 graph.addEdge("3a","3b",5);
+graph.addEdge("3l","3a",1);
 graph.addEdge("3a","5a",7);
 graph.addEdge("3b","4b",4);
 graph.addEdge("4a","5b",2);

@@ -21,11 +21,11 @@ function parkingShow() {
         'parking-b6f': { x: containerWidth * 0.475, y: containerHeight * 0.37 },
         'parking-b6b': { x: containerWidth * 0.48, y: containerHeight * 0.3 },
         'parking-a3a': { x: containerWidth * 0.572, y: containerHeight * 0.6 },
-
+        'parking-b5': { x: containerWidth * 0.43, y: containerHeight * 0.3 },
     }
 
     const toiletNodes = Object.keys(toiletCoordinates);
-    const circleNumbers = [3, 5, 5, 7, 9, 9, 9, 9, 9, 9, 9, 7, 7, 3, 4, 16];
+    const circleNumbers = [3, 5, 5, 7, 9, 9, 9, 9, 9, 9, 9, 7, 7, 3, 4, 16, 7];
     const radiusPercentage = 2;
     const fontSizePercentage = 3.5;
 

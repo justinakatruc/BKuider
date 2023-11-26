@@ -20,6 +20,7 @@ function visualizePath() {
 		'2d':{x:containerWidth*0.318,y:containerHeight*0.65},
 		'2e':{x:containerWidth*0.315,y:containerHeight*0.701},
 		'3a':{x:containerWidth*0.404,y:containerHeight*0.376},
+		'3l':{x:containerWidth*0.39,y:containerHeight*0.376},
 		'3b':{x:containerWidth*0.402,y:containerHeight*0.452},
 		'4a':{x:containerWidth*0.4428,y:containerHeight*0.426},
 		'4b':{x:containerWidth*0.4428,y:containerHeight*0.453},
@@ -28,7 +29,7 @@ function visualizePath() {
 		'4e':{x:containerWidth*0.444,y:containerHeight*0.705},
 		'5a':{x:containerWidth*0.46,y:containerHeight*0.377},
 		'5b':{x:containerWidth*0.46,y:containerHeight*0.427},
-		'6a':{x:containerWidth*0.501,y:containerHeight*0.285},
+		'6a':{x:containerWidth*0.501,y:containerHeight*0.29},
 		'6b':{x:containerWidth*0.502,y:containerHeight*0.378},
 		'7*':{x:containerWidth*0.542,y:containerHeight*0.245},
 		'7a':{x:containerWidth*0.542,y:containerHeight*0.287},
@@ -268,7 +269,7 @@ function visualizePath() {
 		'b6-b':{x:containerWidth*0.4,y:containerHeight*0.36},
 		'b6-c':{x:containerWidth*0.464,y:containerHeight*0.365},
 		'b6-s':{x:containerWidth*0.463,y:containerHeight*0.355},
-		'b6-gdb6':{x:containerWidth*0.463,y:containerHeight*0.3},
+		'b6-gdb6':{x:containerWidth*0.463,y:containerHeight*0.325},
 
 		//floor1
 		//left-side(fromb6-101tob6-105)
@@ -300,6 +301,14 @@ function visualizePath() {
 		//rightside(b6-306)
 		'b6-306':{x:containerWidth*0.482,y:containerHeight*0.347},
 
+		//b5
+		'b5-a':{x:containerWidth*0.392,y:containerHeight*0.315},
+		'b5-b':{x:containerWidth*0.4126,y:containerHeight*0.315},
+		'b5-c':{x:containerWidth*0.413,y:containerHeight*0.286},
+		'b5-d':{x:containerWidth*0.4892,y:containerHeight*0.288},
+		'b5-e':{x:containerWidth*0.489,y:containerHeight*0.249},
+		'b5-108':{x:containerWidth*0.408,y:containerHeight*0.277},
+		'b5-109':{x:containerWidth*0.45,y:containerHeight*0.278},
 		//b2
 		//ground
 		//specialnodes
@@ -664,7 +673,7 @@ function visualizePath() {
 		'b11-204':{x:containerWidth*0.6107,y:containerHeight*0.4385},
 	};
 
-	// const pathNodes = ['b8'];
+	// const pathNodes = ['3l','b5-a','b5-b','b5-c','b5-d','b5-e'];
 	// drawPath (pathNodes);
 
 
