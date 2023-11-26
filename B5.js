@@ -18,6 +18,7 @@ graph.addEdge("b5-d","b5-e",4);
 graph.addEdge("b6-gdb6","b5-b",7);
 graph.addEdge("b6-gdb6","b5-c",7);
 graph.addEdge("b6-gdb6","b5-d",4);
+graph.addEdge("b6-gdb6","b5-109",4);
 
 graph.addEdge("6a","b5-d",2);
 graph.addEdge("6a","b5-e",4);
