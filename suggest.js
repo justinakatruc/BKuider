@@ -1,4 +1,4 @@
-const suggestionList = ["b6-306", "b6-305", "a4-201"];
+const suggestionList = ["b6-306", "B6-305", "b6-304", "b6-gdb6", , "a4-201"];
 
     function suggestStart() {
         const inputBox = document.getElementById("start");
@@ -13,7 +13,7 @@ const suggestionList = ["b6-306", "b6-305", "a4-201"];
     }
 
     function suggest(inputBox, suggestionsContainer) {
-        const inputValue = inputBox.value.toLowerCase();
+        const inputValue = inputBox.value;
         const suggestions = getSuggestions(inputValue);
 
         suggestionsContainer.innerHTML = ""; // Clear previous suggestions
@@ -37,7 +37,7 @@ const suggestionList = ["b6-306", "b6-305", "a4-201"];
 
     function getSuggestions(prefix) {
         return suggestionList.filter(suggestion =>
-            suggestion.toLowerCase().startsWith(prefix)
+            suggestion.startsWith(prefix)
         );
     }
 
