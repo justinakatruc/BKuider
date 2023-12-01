@@ -6,7 +6,9 @@
   <title>BKuider - Be your guider</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/suggest.css">
   <script type="text/javascript" src="/dijkstra.js"></script>
+  <script type="text/javascript" src="/suggest.js"></script>
   <script type="text/javascript" src="/A1.js"></script>
   <script type="text/javascript" src="/A2.js"></script>
   <script type="text/javascript" src="/A3.js"></script>
@@ -39,10 +41,10 @@
   <div class="panel">
     <img class="logo" src="/images/logo.png">
     <label>
-      <input class="start" id="start" type="text" placeholder="Start">
+      <input class="start" id="start" type="text" placeholder="Start" oninput="suggestStart()">
     </label>
     <label>
-      <input class="end" id="end" type="text" placeholder="End">
+      <input class="end" id="end" type="text" placeholder="End" oninput="suggestEnd()">
     </label>
     <select class="weather" id="weather" onchange="weather()">
       <option class="option" value="" disabled selected>Weather</option>
@@ -58,6 +60,7 @@
     </button>
     <b class="contact">Contact: truc.nguyenminh@hcmut.edu.vn</b>
   </div>
+  <div id="suggestionsStart"></div>
   <!-- <div class = "noti">
     <b>Skip "Start" to use GPS.</b>
   </div> -->

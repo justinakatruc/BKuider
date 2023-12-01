@@ -318,6 +318,7 @@
   }
   .panel {
     position: absolute;
+    background-color: black;
     top: 0;
     left: 40%;
     width: 20%;
