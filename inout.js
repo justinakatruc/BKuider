@@ -112,5 +112,21 @@ function transform(input) {
     input = "cantin";
     return input;
   }
+  else if (input === "conveniencestore" || input === "conveniencestore" || input === "cuahangtienloi") {
+    input = "circlek";
+    return input;
+  }
+  else if (input === "nhaxegiaovien" || input === "nhaxecanbo" || input === "nxcb" || input === "nxgv") {
+    input = "nhaxegv";
+    return input;
+  }
+  else if (input === "nhaxetohienthanh" || input === "nxtht") {
+    input = "nhaxetht";
+    return input;
+  }
+  else if (input === "nhaxelythuongkiet" || input === "nxltk") {
+    input = "nhaxeltk";
+    return input;
+  }
   else return input;
 }
