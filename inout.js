@@ -80,23 +80,23 @@ function transform(input) {
     return input;
   }
   //specialplaces
-  else if (input === "hoitruonga5" || input === "hoitruong" || input === "a5-hoitruonga5") {
+  else if (input === "hoitruonga5" || input === "hoitruong" || input === "a5-hoitruonga5" || input === "hta5") {
     input = "a5-hta5";
     return input;
   }
-  else if (input === "giangduongb6" || input === "b6-giangduongb6" || input === "giangduonghoabinh" || input === "hoabinhauditorium") {
+  else if (input === "giangduongb6" || input === "b6-giangduongb6" || input === "giangduonghoabinh" || input === "hoabinhauditorium" || input === "gdhb") {
     input = "b6-gdb6";
     return input;
   }
-  else if (input === "b6-civilengineering") {
+  else if (input === "b6-civilengineering" || input === "civilengineering") {
     input = "b6-ce";
     return input;
   }
-  else if (input === "hoitruongb4" || input === "b4-hoitruongb4") {
+  else if (input === "hoitruongb4" || input === "b4-hoitruongb4" || input === "htb4") {
     input = "b4-htb4";
     return input;
   }
-  else if (input === "hoitruonga4" || input === "a4-hoitruonga4") {
+  else if (input === "hoitruonga4" || input === "a4-hoitruonga4" || input === "hta4") {
     input = "a4-hta4";
     return input;
   }
@@ -112,11 +112,11 @@ function transform(input) {
     input = "cantin";
     return input;
   }
-  else if (input === "conveniencestore" || input === "conveniencestore" || input === "cuahangtienloi") {
+  else if (input === "conveniencestore" || input === "cuahangtienloi") {
     input = "circlek";
     return input;
   }
-  else if (input === "nhaxegiaovien" || input === "nhaxecanbo" || input === "nxcb" || input === "nxgv") {
+  else if (input === "nhaxegiaovien" || input === "nhaxecanbo" || input === "nhaxecb" || input === "nxcb" || input === "nxgv") {
     input = "nhaxegv";
     return input;
   }

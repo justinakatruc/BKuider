@@ -18,3 +18,24 @@
 #suggestionsStart ul:hover {
     background-color: beige;
 }
+
+#suggestionsEnd {
+    display: none;
+    width: auto;
+    left: 60%;
+    top: 25%;
+    background-color: lightblue;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 100;
+}
+#suggestionsEnd ul {
+    font-size: 2vh;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+#suggestionsEnd ul:hover {
+    background-color: beige;
+}
