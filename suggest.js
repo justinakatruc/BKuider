@@ -26,7 +26,7 @@ function suggestEnd() {
 }
 
 function suggest(inputBox, suggestionsContainer) {
-    const inputValue = inputBox.value.LowerCase();
+    const inputValue = inputBox.value.toLowerCase();
     const suggestions = getSuggestions(inputValue);
 
     suggestionsContainer.innerHTML = ""; // Clear previous suggestions
@@ -36,7 +36,7 @@ function suggest(inputBox, suggestionsContainer) {
             const suggestionItem = document.createElement("ul");
             suggestionItem.textContent = suggestion;
             suggestionItem.addEventListener("click", () => {
-                inputBox.value.LowerCase() = suggestion;
+                inputBox.value.toLowerCase() = suggestion;
                 suggestionsContainer.style.display = "none";
             });
             suggestionsContainer.appendChild(suggestionItem);
