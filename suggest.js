@@ -63,14 +63,14 @@ function getSuggestions(prefix) {
 }
 
 // Close suggestions if the user clicks outside the suggestions container
-document.addEventListener("click", function(event) {
-const suggestionsContainerStart = document.getElementById("suggestionsStart");
-if (event.target !== document.getElementById("start") && event.target !== suggestionsContainerStart) {
-suggestionsContainerStart.style.display = "none";
-}
+//document.addEventListener("click", function(event) {
+//const suggestionsContainerStart = document.getElementById("suggestionsStart");
+//if (event.target !== document.getElementById("start") && event.target !== suggestionsContainerStart) {
+//suggestionsContainerStart.style.display = "none";
+//}
 
-const suggestionsContainerEnd = document.getElementById("suggestionsEnd");
-if (event.target !== document.getElementById("end") && event.target !== suggestionsContainerEnd) {
-suggestionsContainerEnd.style.display = "none";
-}
-});
+//const suggestionsContainerEnd = document.getElementById("suggestionsEnd");
+//if (event.target !== document.getElementById("end") && event.target !== suggestionsContainerEnd) {
+//suggestionsContainerEnd.style.display = "none";
+//}
+//});
