@@ -36,7 +36,7 @@ function suggest(inputBox, suggestionsContainer) {
             const suggestionItem = document.createElement("ul");
             suggestionItem.textContent = suggestion;
             suggestionItem.addEventListener("click", () => {
-                inputBox.value.toLowerCase() = suggestion;
+                inputBox.value = suggestion;
                 suggestionsContainer.style.display = "none";
             });
             suggestionsContainer.appendChild(suggestionItem);
