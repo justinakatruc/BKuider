@@ -26,7 +26,7 @@ function suggestEnd() {
 }
 
 function suggest(inputBox, suggestionsContainer) {
-    const inputValue = inputBox.value;
+    const inputValue = inputBox.value.LowerCase();
     const suggestions = getSuggestions(inputValue);
 
     suggestionsContainer.innerHTML = ""; // Clear previous suggestions
