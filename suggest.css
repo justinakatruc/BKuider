@@ -1,19 +1,20 @@
 #suggestionsStart {
     display: none;
-    width: auto;
-    left: 60%;
-    top: 25%;
+    width: 70%;
+    margin-left: 15%;
     background-color: lightblue;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 100;
+    border-radius: 20px;
+    font-family: 'Bahnschrift', 'Copperplate';
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 #suggestionsStart ul {
-    font-size: 2vh;
+    font-size: medium;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
+    margin: 2px;
     cursor: pointer;
+    border-radius: 20px;
 }
 #suggestionsStart ul:hover {
     background-color: beige;
@@ -21,20 +22,21 @@
 
 #suggestionsEnd {
     display: none;
-    width: auto;
-    left: 60%;
-    top: 25%;
+    width: 70%;
+    margin-left: 15%;
     background-color: lightblue;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 100;
+    border-radius: 20px;
+    font-family: 'Bahnschrift', 'Copperplate';
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 #suggestionsEnd ul {
-    font-size: 2vh;
+    font-size: medium;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
+    margin: 2px;
     cursor: pointer;
+    border-radius: 20px;
 }
 #suggestionsEnd ul:hover {
     background-color: beige;

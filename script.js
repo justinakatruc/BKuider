@@ -302,6 +302,7 @@ function visualizePath() {
 		'b6-306':{x:containerWidth*0.482,y:containerHeight*0.347},
 
 		//b5
+		'b5':{x:containerWidth*0.489,y:containerHeight*0.26},
 		'b5-a':{x:containerWidth*0.392,y:containerHeight*0.315},
 		'b5-b':{x:containerWidth*0.4126,y:containerHeight*0.315},
 		'b5-c':{x:containerWidth*0.413,y:containerHeight*0.286},

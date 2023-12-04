@@ -33,7 +33,6 @@ function end() {
 }
 
 function removeDiacritics(input) {
-  // Define a list of characters with diacritics and their replacements
   const diacriticMap = {
     'ú': 'u', 'ù': 'u', 'ủ': 'u', 'ũ': 'u', 'ụ': 'u',
     'ư': 'u', 'ứ': 'u', 'ừ': 'u', 'ử': 'u', 'ữ': 'u', 'ự': 'u',
@@ -56,12 +55,10 @@ function removeDiacritics(input) {
     'đ': 'd'
   };
 
-  // Use a regular expression to match diacritic characters and replace them 
   input = input.replace(/[úùủũụưứừửữựéèẻẽẹêếềểễệóòỏõọôốồổỗộơớờởỡợáàảãạăắằẳẵặâấầẩẫậíìỉĩịýỳỷỹỵđ]/g, function(match) {
     return diacriticMap[match];
   });
 
-  // Return the modified string
   return input;
 }
 
@@ -84,7 +81,7 @@ function transform(input) {
     input = "a5-hta5";
     return input;
   }
-  else if (input === "giangduongb6" || input === "b6-giangduongb6" || input === "giangduonghoabinh" || input === "hoabinhauditorium" || input === "gdhb") {
+  else if (input === "giangduongb6" || input === "b6-giangduongb6" || input === "giangduonghoabinh" || input === "hoabinhauditorium" || input === "gdhb" || input === "gdb6" || input === "hoitruonghoabinh") {
     input = "b6-gdb6";
     return input;
   }
@@ -129,4 +126,30 @@ function transform(input) {
     return input;
   }
   else return input;
+}
+
+function hasDiacritics(input) {
+  const normalizedString = input.normalize("NFD");
+
+  const diacriticRegex = /[\u0300-\u036F\u0111]/;
+
+  return diacriticRegex.test(normalizedString);
+}
+
+function checkForDiacritics(inputElement) {
+  const hasDiacriticsClass = "has-diacritics";
+  const inputValue = inputElement.value;
+
+  // Check if the input has diacritics
+  if (hasDiacritics(inputValue)) {
+    inputElement.classList.add(hasDiacriticsClass);
+  } else {
+    inputElement.classList.remove(hasDiacriticsClass);
+  }
+}
+
+function handleInputStart(inputElement) {
+  suggestStart(inputElement);
+
+  checkForDiacritics(inputElement);
 }

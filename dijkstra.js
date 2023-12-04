@@ -448,6 +448,14 @@ function weatherconverter() {
 		graph.addEdge("10e","c7",1800);
 		graph.addEdge("10d","c7",200);
 		graph.addEdge("7e","nhaxegv",300);
+		graph.addEdge("b6-gdb6","b5-b",700);
+		graph.addEdge("b6-gdb6","b5-c",700);
+		graph.addEdge("b6-gdb6","b5-d",400);
+		graph.addEdge("b6-gdb6","b5-109",400);
+		graph.addEdge("3a","b6-b",200);
+		graph.addEdge("6a","b5-d",200);
+		graph.addEdge("6a","b5-e",400);
+		graph.addEdge("7*","b5-e",700);
 		//solution2 (add wanted edges and weights that were not defined before)
 		graph.addEdge("7d","b8-ls",2);
 	}
@@ -519,6 +527,14 @@ function weatherconverter() {
 		graph.addEdge("10e","c7",18);
 		graph.addEdge("10d","c7",2);
 		graph.addEdge("7e","nhaxegv",3);
+		graph.addEdge("b6-gdb6","b5-b",7);
+		graph.addEdge("b6-gdb6","b5-c",7);
+		graph.addEdge("b6-gdb6","b5-d",4);
+		graph.addEdge("b6-gdb6","b5-109",4);
+		graph.addEdge("3a","b6-b",2);
+		graph.addEdge("6a","b5-d",2);
+		graph.addEdge("6a","b5-e",4);
+		graph.addEdge("7*","b5-e",7);
 	}
 
 	function clearWeather() {
@@ -590,5 +606,13 @@ function weatherconverter() {
 		graph.clearSpecificEdges("10e","c7");
 		graph.clearSpecificEdges("10d","c7");
 		graph.clearSpecificEdges("7e","nhaxegv");
+		graph.clearSpecificEdges("b6-gdb6","b5-b");
+		graph.clearSpecificEdges("b6-gdb6","b5-c");
+		graph.clearSpecificEdges("b6-gdb6","b5-d");
+		graph.clearSpecificEdges("b6-gdb6","b5-109");
+		graph.clearSpecificEdges("3a","b6-b");
+		graph.clearSpecificEdges("6a","b5-d");
+		graph.clearSpecificEdges("6a","b5-e");
+		graph.clearSpecificEdges("7*","b5-e");
 	}
 }
