@@ -254,9 +254,7 @@ function watchLocation() {
                     nearestPoint = pointName;
                     }
                 }
-                setTimeout(() => {
-                    visualizePath(position);
-                }, 5000);
+                processLocation(position);
                 //console.log(`Nearest point: ${nearestPoint} (Distance: ${minDistance} km)`);
 
                 resolve(`${nearestPoint}`);
@@ -284,4 +282,10 @@ function stopWatchingLocation() {
     } else {
         console.warn('No active location watch to stop.');
     }
+}
+
+function processLocation(position) {
+    // Your processing logic goes here
+    console.log('Processed position:', position);
+    visualizePath(position); // Call visualize if needed
 }
