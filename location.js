@@ -1,12 +1,9 @@
-let watchId;
-
-function watchLocation() {
+function getLocation() {
     return new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
-            watchId = navigator.geolocation.watchPosition(
-                (position) => {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
+            navigator.geolocation.getCurrentPosition(function(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
                 //these 2 lines below is for testing
                 // latitude = 10.773832796366763;
                 // longitude = 106.65923044859811;
@@ -254,7 +251,7 @@ function watchLocation() {
                     nearestPoint = pointName;
                     }
                 }
-                processLocation(position);
+                
                 //console.log(`Nearest point: ${nearestPoint} (Distance: ${minDistance} km)`);
 
                 resolve(`${nearestPoint}`);
@@ -270,22 +267,7 @@ function watchLocation() {
 }
 
 async function GPS() {
-    const result_1 = await watchLocation();
+    const result_1 = await getLocation();
     const dijkstraResult = graph.Dijkstra(result_1, end());
     return dijkstraResult;
-}
-
-function stopWatchingLocation() {
-    if (watchId) {
-        navigator.geolocation.clearWatch(watchId);
-        console.log('Location watching stopped.');
-    } else {
-        console.warn('No active location watch to stop.');
-    }
-}
-
-function processLocation(position) {
-    // Your processing logic goes here
-    console.log('Processed position:', position);
-    visualizePath(position); // Call visualize if needed
 }
