@@ -254,7 +254,9 @@ function watchLocation() {
                     nearestPoint = pointName;
                     }
                 }
-                visualizePath();
+                setTimeout(() => {
+                    visualize(position);
+                }, 5000);
                 //console.log(`Nearest point: ${nearestPoint} (Distance: ${minDistance} km)`);
 
                 resolve(`${nearestPoint}`);
