@@ -68,16 +68,16 @@ function transform(input) {
     input = "gate1";
     return input;
   }
-  else if (input === "cong2" || input === "conggiua" || input === "congthtgiua" || input === "congtohienthanhgiua" || input === "secondgate") {
+  else if (input === "cong2" || input === "conggiua" || input === "congthtgiua" || input === "congtohienthanhgiua" || input === "secondgate" || input === "tohienthanhmidgate") {
     input = "gate2";
     return input;
   }
-  else if (input === "cong3" || input === "congcuoi" || input === "congduoi" || input === "congthtduoi" || input === "congtohienthanhduoi" || input === "thirdgate") {
+  else if (input === "cong3" || input === "congcuoi" || input === "congria" || input === "congthtria" || input === "congtohienthanhria" || input === "thirdgate") {
     input = "gate3";
     return input;
   }
   //specialplaces
-  else if (input === "hoitruonga5" || input === "hoitruong" || input === "a5-hoitruonga5" || input === "hta5") {
+  else if (input === "hoitruonga5" || input === "hoitruong" || input === "a5-hoitruonga5" || input === "hta5" || input === "a5-hall" || input === "a5hall") {
     input = "a5-hta5";
     return input;
   }
@@ -89,15 +89,15 @@ function transform(input) {
     input = "b6-ce";
     return input;
   }
-  else if (input === "hoitruongb4" || input === "b4-hoitruongb4" || input === "htb4") {
+  else if (input === "hoitruongb4" || input === "b4-hoitruongb4" || input === "htb4" || input === "b4-hall" || input === "b4hall") {
     input = "b4-htb4";
     return input;
   }
-  else if (input === "hoitruonga4" || input === "a4-hoitruonga4" || input === "hta4") {
+  else if (input === "hoitruonga4" || input === "a4-hoitruonga4" || input === "hta4" || input === "a4-hall" || input === "a4hall") {
     input = "a4-hta4";
     return input;
   }
-  else if (input === "phongyte") {
+  else if (input === "phongyte" || input === "healthcarecenter" || input === "medicalfacility" || input === "studenthealthcenter" || input === "campushealthcenter") {
     input = "b7";
     return input;
   }

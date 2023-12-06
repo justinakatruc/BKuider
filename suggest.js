@@ -1,20 +1,25 @@
 const suggestionList = [
     "a1", "a2", "a3", "a4", "a5",
     "b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10", "b11", "b12",
-    "c1", "c2", "c3", "c4", "c5", "c6", "nhaxeltk", "nhaxetht", "nhaxegv",
-    "gate 1", "gate 2", "gate 3", "ly thuong kiet gate", "to hien thanh mid gate", "to hien thanh rear gate", "bkhouse", "canteen",
+    "c1", "c2", "c3", "c4", "c5", "c6", "c7", 
+    "nhaxeltk", "nhaxetht", "nhaxegv",
+    "bkhouse", "canteen", "food court", "circle K",
+    //gates
+    "gate 1", "ly thuong kiet gate", "cong 1", "cong ly thuong kiet", "main gate", "first gate",
+    "gate 2", "to hien thanh mid gate", "cong 2", "cong to hien thanh giua", "second gate",
+    "gate 3",  "to hien thanh rear gate", "cong 3", "cong to hien thanh ria", "third gate",
     //a2
-    "thuvien",
-    //a3
-    "a3",
+    "thu vien", "library",
     //a4
     "a4-108", 
+    "hoi truong a4", "a4-hoitruonga4", "a4-hall",
     "a4-201", "a4-202", "a4-203", "a4-204", "a4-205", "a4-206", "a4-207", 
     "a4-306", "a4-311", "a4-312", "a4-313", "a4-314", "a4-315", 
     "a4-401", "a4-402", "a4-407", "a4-408", "a4-409", "a4-410", "a4-411", "a4-412", "a4-413", 
     "a4-501", "a4-506", "a4-507", "a4-508", "a4-509", "a4-510", "a4-511", 
     //a5
     "a5-101", "a5-102", "a5-103", "a5-104", "a5-105", "a5-106", "a5-107", "a5-108", "a5-109", 
+    "hoi truong a5", "a5-hoitruonga5", "a5-hall", "main hall",
     //b1
     "b1-108", "b1-109", "b1-110", "b1-111", "b1-112", "b1-106", "b1-105", "b1-104", "b1-103", "b1-102", "b1-114", "b1-119", "b1-116", "b1-115", "b1-118", 
     "b1-200", "b1-201", "b1-202", "b1-203", "b1-205", "b1-204", "b1-206", "b1-207", "b1-208", "b1-209", "b1-210", "b1-211", "b1-212", "b1-213", "b1-214", "b1-215", 
@@ -29,6 +34,7 @@ const suggestionList = [
     "b3-201", "b3-202", "b3-203", "b3-204", "b3-205", "b3-206", "b3-207", "b3-208", 
     //b4
     "b4-101", "b4-102", "b4-103", "b4-104", "b4-105", "b4-106", 
+    "hoi truong b4", "b4-hoitruongb4", "b4-hall",
     "b4-201", "b4-202", "b4-203", "b4-204", "b4-205", "b4-206", "b4-207", "b4-208", "b4-209", 
     "b4-301", "b4-302", "b4-303", "b4-304", "b4-305", "b4-306", 
     "b4-401", "b4-402", "b4-403", "b4-405", "b4-406", 
@@ -37,9 +43,12 @@ const suggestionList = [
     //b5
     "b5-108", "b5-109",
     //b6
-    "b6-101", "b6-102", "b6-103", "b6-104", "b6-105", "b6-106", "gdb6", "b6-gdb6", "hoa binh auditorium",
+    "b6-101", "b6-102", "b6-103", "b6-104", "b6-105", "b6-106", 
+    "giang duong hoa binh", "b6-gdb6", "hoa binh auditorium",
     "b6-201", "b6-202c", "b6-202b", "b6-202a", "b6-meetingroom", "meeting room", "b6-ce", "civil engineering",
     "b6-301", "b6-302", "b6-303", "b6-304", "b6-305", "b6-306",
+    //b7
+    "phong y te", "health care center", "medical facility", "student health center", "campus health center",
     //b8
     "b8-102", "b8-103", "b8-104", "b8-105", "b8-106", "b8-107", 
     "b8-202", "b8-203", "b8-204", "b8-205", "b8-206", 

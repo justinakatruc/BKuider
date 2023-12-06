@@ -13,18 +13,60 @@
 // noteIconsvg.appendChild(stairicon);
 // noteIconsvg.appendChild(endicon);
 
+//defineclicked
+let goClicked = false;
+
+const transformGo = document.getElementById('go');
+
+transformGo.addEventListener('click', function () {
+	goClicked = true;
+	let landscape = window.matchMedia("(orientation: landscape)").matches;
+	if (landscape && goClicked) {
+		visualizePath();
+	}
+});
+
+let toiletClicked = false;
+
+const transformToilet = document.getElementById('toilet');
+
+transformToilet.addEventListener('click', function () {
+  toiletClicked = true;
+});
+
+let parkingClicked = false;
+
+const transformParking = document.getElementById('parking');
+
+transformParking.addEventListener('click', function () {
+  parkingClicked = true;
+});
+
 
 //hide and visualize panel and map
 function visual() {
-	// Add the 'hidden' class to .panel
-	document.querySelector('.panel').classList.remove('visible');
-	document.querySelector('.panel').classList.add('hidden');
-	document.querySelector('.rotate-message').classList.add('visible');
-	document.querySelector('.rotate-message').classList.remove('hidden');
-  
-	// Remove the 'hidden' class and add the 'visible' class to .map
-	document.querySelector('.map').classList.remove('hidden');
-	document.querySelector('.map').classList.add('visible');
+	const inputEnd = end();
+	if (inputEnd !== '' || parkingClicked || toiletClicked) {
+		// Add the 'hidden' class to .panel
+		document.querySelector('.panel').classList.remove('visible');
+		document.querySelector('.panel').classList.add('hidden');
+		document.querySelector('.rotate-message').classList.add('visible');
+		document.querySelector('.rotate-message').classList.remove('hidden');
+
+		const inputresult = starti()
+		if (inputresult === '' && !parkingClicked && !toiletClicked) {
+			document.querySelector('.refreshGPS').classList.remove('hidden');
+			document.querySelector('.refreshGPS').classList.add('visible');
+		}
+		else {
+			document.querySelector('.refreshGPS').classList.add('hidden');
+			document.querySelector('.refreshGPS').classList.remove('visible');
+		}
+
+		// Remove the 'hidden' class and add the 'visible' class to .map
+		document.querySelector('.map').classList.remove('hidden');
+		document.querySelector('.map').classList.add('visible');
+	}
 }
 
 const hide = document.getElementById('go');
@@ -74,33 +116,3 @@ screen. orientation. addEventListener("change", function(e) {
 		parkingClicked = false;
 	}
 });
-
-
-let goClicked = false;
-
-const transformGo = document.getElementById('go');
-
-transformGo.addEventListener('click', function () {
-	goClicked = true;
-	let landscape = window.matchMedia("(orientation: landscape)").matches;
-	if (landscape && goClicked) {
-		visualizePath();
-	}
-});
-
-let toiletClicked = false;
-
-const transformToilet = document.getElementById('toilet');
-
-transformToilet.addEventListener('click', function () {
-  toiletClicked = true;
-});
-
-let parkingClicked = false;
-
-const transformParking = document.getElementById('parking');
-
-transformParking.addEventListener('click', function () {
-  parkingClicked = true;
-});
-

@@ -20,6 +20,7 @@ graph.addVertex("c4-404");
 graph.addVertex("c4-501");
 graph.addVertex("c4-502");
 graph.addVertex("c4-503");
+graph.addVertex("c4-ms");
 graph.addVertex("c4-ls");
 graph.addVertex("c4-rs");
 graph.addVertex("c4-le");
@@ -32,12 +33,18 @@ graph.addEdge("10d","c4",5);
 graph.addEdge("9d","c4-le",2);
 graph.addEdge("10d","c4-re",3);
 
+graph.addEdge("c4-ms","c4-104",0);
+graph.addEdge("c4-ms","c4-204.2",0);
+graph.addEdge("c4-ms","c4-304",0);
+graph.addEdge("c4-ms","c4-404",0);
+graph.addEdge("c4-ms","c4-503",0);
+
 graph.addEdge("c4-le","c4-ls",1);
 graph.addEdge("c4-ls","c4-101",1);
 graph.addEdge("c4-le","c4-101",1);
-graph.addEdge("c4-101","c4-102",1);
-graph.addEdge("c4-102","c4-103",1);
-graph.addEdge("c4-103","c4-104",1);
+graph.addEdge("c4-101","c4-102",2);
+graph.addEdge("c4-102","c4-103",2);
+graph.addEdge("c4-103","c4-104",2);
 graph.addEdge("c4-104","c4-re",1);
 graph.addEdge("c4-104","c4-rs",1);
 graph.addEdge("c4-re","c4-rs",1);
@@ -45,29 +52,29 @@ graph.addEdge("c4-re","c4-105",2);
 graph.addEdge("c4-rs","c4-105",2);
 
 //floor2
-graph.addEdge("c4-ls","c4-201",2);
+graph.addEdge("c4-ls","c4-201",4);
 graph.addEdge("c4-201","c4-202",1);
 graph.addEdge("c4-202","c4-203",1);
 graph.addEdge("c4-203","c4-204",1);
 graph.addEdge("c4-204","c4-204.2",1);
-graph.addEdge("c4-204.2","c4-rs",2);
+graph.addEdge("c4-204.2","c4-rs",4);
 
 //floor3
-graph.addEdge("c4-ls","c4-301",3);
+graph.addEdge("c4-ls","c4-301",8);
 graph.addEdge("c4-301","c4-302",1);
 graph.addEdge("c4-302","c4-303",1);
 graph.addEdge("c4-303","c4-304",1);
-graph.addEdge("c4-304","c4-rs",3);
+graph.addEdge("c4-304","c4-rs",8);
 
 //floor4
-graph.addEdge("c4-ls","c4-401",4);
+graph.addEdge("c4-ls","c4-401",16);
 graph.addEdge("c4-401","c4-402",1);
 graph.addEdge("c4-402","c4-403",1);
 graph.addEdge("c4-403","c4-404",1);
-graph.addEdge("c4-404","c4-rs",4);
+graph.addEdge("c4-404","c4-rs",16);
 
 //floor5
-graph.addEdge("c4-ls","c4-501",5);
+graph.addEdge("c4-ls","c4-501",32);
 graph.addEdge("c4-501","c4-502",1);
 graph.addEdge("c4-502","c4-503",1);
-graph.addEdge("c4-503","c4-rs",5);
+graph.addEdge("c4-503","c4-rs",32);

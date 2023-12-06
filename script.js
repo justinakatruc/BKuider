@@ -447,32 +447,33 @@ function visualizePath() {
 		'c4-ls':{x:containerWidth*0.635,y:containerHeight*0.23},
 		'c4-re':{x:containerWidth*0.694,y:containerHeight*0.24},
 		'c4-rs':{x:containerWidth*0.698,y:containerHeight*0.235},
+		'c4-ms':{x:containerWidth*0.687,y:containerHeight*0.238},
 		//floor1
-		'c4-101':{x:containerWidth*0.65,y:containerHeight*0.238},
-		'c4-102':{x:containerWidth*0.66,y:containerHeight*0.238},
-		'c4-103':{x:containerWidth*0.67,y:containerHeight*0.238},
-		'c4-104':{x:containerWidth*0.68,y:containerHeight*0.238},
+		'c4-101':{x:containerWidth*0.644,y:containerHeight*0.238},
+		'c4-102':{x:containerWidth*0.656,y:containerHeight*0.238},
+		'c4-103':{x:containerWidth*0.668,y:containerHeight*0.238},
+		'c4-104':{x:containerWidth*0.686,y:containerHeight*0.238},
 		'c4-105':{x:containerWidth*0.695,y:containerHeight*0.22},
 		//floor2
-		'c4-201':{x:containerWidth*0.65,y:containerHeight*0.234},
-		'c4-202':{x:containerWidth*0.66,y:containerHeight*0.234},
-		'c4-203':{x:containerWidth*0.67,y:containerHeight*0.234},
-		'c4-204':{x:containerWidth*0.674,y:containerHeight*0.234},
-		'c4-204.2':{x:containerWidth*0.68,y:containerHeight*0.234},
+		'c4-201':{x:containerWidth*0.642,y:containerHeight*0.234},
+		'c4-202':{x:containerWidth*0.653,y:containerHeight*0.234},
+		'c4-203':{x:containerWidth*0.664,y:containerHeight*0.234},
+		'c4-204':{x:containerWidth*0.675,y:containerHeight*0.234},
+		'c4-204.2':{x:containerWidth*0.6865,y:containerHeight*0.234},
 		//floor3
-		'c4-301':{x:containerWidth*0.65,y:containerHeight*0.230},
+		'c4-301':{x:containerWidth*0.643,y:containerHeight*0.230},
 		'c4-302':{x:containerWidth*0.66,y:containerHeight*0.230},
-		'c4-303':{x:containerWidth*0.67,y:containerHeight*0.230},
-		'c4-304':{x:containerWidth*0.68,y:containerHeight*0.230},
+		'c4-303':{x:containerWidth*0.675,y:containerHeight*0.230},
+		'c4-304':{x:containerWidth*0.687,y:containerHeight*0.230},
 		//floor4
-		'c4-401':{x:containerWidth*0.65,y:containerHeight*0.226},
-		'c4-402':{x:containerWidth*0.67,y:containerHeight*0.226},
-		'c4-403':{x:containerWidth*0.67,y:containerHeight*0.226},
-		'c4-404':{x:containerWidth*0.68,y:containerHeight*0.226},
+		'c4-401':{x:containerWidth*0.644,y:containerHeight*0.226},
+		'c4-402':{x:containerWidth*0.661,y:containerHeight*0.226},
+		'c4-403':{x:containerWidth*0.676,y:containerHeight*0.226},
+		'c4-404':{x:containerWidth*0.6875,y:containerHeight*0.226},
 		//floor5
-		'c4-501':{x:containerWidth*0.65,y:containerHeight*0.222},
-		'c4-502':{x:containerWidth*0.67,y:containerHeight*0.222},
-		'c4-503':{x:containerWidth*0.68,y:containerHeight*0.222},
+		'c4-501':{x:containerWidth*0.645,y:containerHeight*0.222},
+		'c4-502':{x:containerWidth*0.666,y:containerHeight*0.222},
+		'c4-503':{x:containerWidth*0.688,y:containerHeight*0.222},
 
 		//c5
 		//ground
@@ -482,35 +483,34 @@ function visualizePath() {
 		'c5-ls':{x:containerWidth*0.63,y:containerHeight*0.17},
 		'c5-re':{x:containerWidth*0.69,y:containerHeight*0.185},
 		'c5-rs':{x:containerWidth*0.696,y:containerHeight*0.175},
+		'c5-ms':{x:containerWidth*0.68,y:containerHeight*0.175},
+		'c5-htc5':{x:containerWidth*0.67,y:containerHeight*0.171},
 		//floor1
-		'c5-101':{x:containerWidth*0.65,y:containerHeight*0.175},
-		'c5-102':{x:containerWidth*0.66,y:containerHeight*0.175},
-		'c5-104':{x:containerWidth*0.67,y:containerHeight*0.175},
+		'c5-101':{x:containerWidth*0.644,y:containerHeight*0.175},
+		'c5-102':{x:containerWidth*0.656,y:containerHeight*0.175},
+		'c5-104':{x:containerWidth*0.668,y:containerHeight*0.175},
 		'c5-106':{x:containerWidth*0.68,y:containerHeight*0.175},
 		'c5-107':{x:containerWidth*0.695,y:containerHeight*0.1705},
 		//floor2
-		'c5-201':{x:containerWidth*0.65,y:containerHeight*0.171},
-		'c5-202':{x:containerWidth*0.657,y:containerHeight*0.171},
-		'c5-203':{x:containerWidth*0.67,y:containerHeight*0.171},
-		'c5-204':{x:containerWidth*0.676,y:containerHeight*0.171},
-		'c5-205':{x:containerWidth*0.68,y:containerHeight*0.171},
-		'c5-206':{x:containerWidth*0.685,y:containerHeight*0.171},
-		'c5-207':{x:containerWidth*0.69,y:containerHeight*0.171},
-		'c5-208':{x:containerWidth*0.693,y:containerHeight*0.171},
+		'c5-201':{x:containerWidth*0.64,y:containerHeight*0.171},
+		'c5-202':{x:containerWidth*0.645,y:containerHeight*0.171},
+		'c5-203':{x:containerWidth*0.655,y:containerHeight*0.171},
+		'c5-204':{x:containerWidth*0.66,y:containerHeight*0.171},
+		'c5-208':{x:containerWidth*0.68,y:containerHeight*0.171},
 		'c5-209':{x:containerWidth*0.695,y:containerHeight*0.171},
 		//floor3
-		'c5-301':{x:containerWidth*0.65,y:containerHeight*0.167},
-		'c5-302':{x:containerWidth*0.66,y:containerHeight*0.167},
+		'c5-301':{x:containerWidth*0.64,y:containerHeight*0.167},
+		'c5-302':{x:containerWidth*0.655,y:containerHeight*0.167},
 		'c5-303':{x:containerWidth*0.67,y:containerHeight*0.167},
 		'c5-304':{x:containerWidth*0.68,y:containerHeight*0.167},
 		//floor4
-		'c5-401':{x:containerWidth*0.65,y:containerHeight*0.163},
-		'c5-402':{x:containerWidth*0.66,y:containerHeight*0.163},
+		'c5-401':{x:containerWidth*0.64,y:containerHeight*0.163},
+		'c5-402':{x:containerWidth*0.655,y:containerHeight*0.163},
 		'c5-403':{x:containerWidth*0.67,y:containerHeight*0.163},
 		'c5-404':{x:containerWidth*0.68,y:containerHeight*0.163},
 		//floor5
-		'c5-501':{x:containerWidth*0.65,y:containerHeight*0.159},
-		'c5-502':{x:containerWidth*0.66,y:containerHeight*0.159},
+		'c5-501':{x:containerWidth*0.64,y:containerHeight*0.159},
+		'c5-502':{x:containerWidth*0.655,y:containerHeight*0.159},
 		'c5-503':{x:containerWidth*0.67,y:containerHeight*0.159},
 		'c5-504':{x:containerWidth*0.68,y:containerHeight*0.159},
 
@@ -711,15 +711,17 @@ function visualizePath() {
 				console.log(resultArray);
 				drawPath(pathNodes);
 			}
-			else alert("Sorry, we don't have any data for your destination");
+			else if (inputresult === '' && destination === '') {
+				alert("Please, at least type in your destination in the End box");
+			}
 		})
 	}
 	else if (inputresult !== start) {
 		alert("Sorry, we don't have any data for your start point");
 	}
-	else {
+	else if (destination !== '') {
 		alert("Sorry, we don't have any data for your destination");
-	}	
+	}
 	
 	function drawPath(pathNodes) {
 		for (let i = 0; i < pathNodes.length - 1; i++) {
@@ -744,6 +746,7 @@ function visualizePath() {
 			const regex1 =  /^[a-z]\d-s$/;
 			const regexa = /^[a-z]\d-([2-9])\d{2}$/;
 			const regexb =  /^[a-z]\d-([2-9])\d{2}[a-z]$/;
+			const regexe =  /^[a-z]\d-([2-9])\d{2}.\d$/;
 			const regexb6 = /^b6-meetingroom$/;
 
 
@@ -754,6 +757,7 @@ function visualizePath() {
 			//compare after stair (upward)
 			const matcha = pathNodes[i+1].match(regexa);
 			const matchb = pathNodes[i+1].match(regexb);
+			const matche = pathNodes[i+1].match(regexe);
 			//special after stair
 			var matchb6u = pathNodes[i+1].match(regexb6);
 
@@ -786,8 +790,8 @@ function visualizePath() {
 				}
 			}
 			//normal
-			if ((match || match1) && ((matcha || matchb) || (matchc || matchd) || (matchb6d || matchb6u))) {
-				if ((match || match1) && ((matcha || matchb) || (matchc || matchd))) {
+			if ((match || match1) && ((matcha || matchb || matche) || (matchc || matchd) || (matchb6d || matchb6u))) {
+				if ((match || match1) && ((matcha || matchb || matche) || (matchc || matchd))) {
 					drawstair();
 					// console.log("case2.1 ", i);	
 				}

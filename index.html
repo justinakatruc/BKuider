@@ -41,7 +41,7 @@
   <div class="panel">
     <img class="logo" src="/images/logo.png">
     <label>
-      <input class="start" id="start" type="text" placeholder="Start" oninput="handleInputStart(this)">
+      <input class="start" id="start" type="text" placeholder="Start" oninput="suggestStart()">
     </label>
     <div id="suggestionsStart"></div>
     <label>
@@ -63,15 +63,13 @@
     <b class="contact">Contact: truc.nguyenminh@hcmut.edu.vn</b>
   </div>
   
-  <!-- <div class = "noti">
-    <b>Skip "Start" to use GPS.</b>
-  </div> -->
   <div class="map hidden" id="map-container">
     <img class="map" alt="sa ban truong" src="images/map.png"/>
     <svg class="map" id="map-svg"></svg>
-    <button class="goBack" onclick="goBack()">RETURN</button>
-    <button class="goBackL" onclick="goBack()"><img id="returnicon" src="images/return.png"></button>
-    <p class="source">Nguồn ảnh: Trường ĐH Bách Khoa - ĐHQG-HCM</p>
+    <button class="info">BKUIDER-CC25</button>
+    <button class="goBack" onclick="goBack()"><img id="returnicon" src="images/sense.png"></button>
+    <button class="refreshGPS" onclick="visualizePath()"><img id="refreshicon" src="images/refreshgps.png"></button>
+    <p class="source">Image credit.: Ho Chi Minh City University of Technology</p>
   </div>
   <!-- <script>
     document.addEventListener("keydown", e => {
