@@ -299,7 +299,7 @@ function visualizePath() {
 		'b6-304':{x:containerWidth*0.438,y:containerHeight*0.347},
 		'b6-305':{x:containerWidth*0.45,y:containerHeight*0.347},
 		//rightside(b6-306)
-		'b6-306':{x:containerWidth*0.482,y:containerHeight*0.347},
+		'b6-306':{x:containerWidth*0.472,y:containerHeight*0.347},
 
 		//b5
 		'b5':{x:containerWidth*0.489,y:containerHeight*0.26},
