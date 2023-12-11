@@ -8,12 +8,13 @@ function waterShow() {
     const waterCoordinates = {
         'water-b1a': { x: containerWidth * 0.265, y: containerHeight * 0.65 },
         'water-b1b': { x: containerWidth * 0.268, y: containerHeight * 0.72 },
-        'water-b6': { x: containerWidth * 0.46, y: containerHeight * 0.33 },
+        'water-b6a': { x: containerWidth * 0.4, y: containerHeight * 0.35 },
+        'water-b6b': { x: containerWidth * 0.46, y: containerHeight * 0.33 },
         'water-c4': { x: containerWidth * 0.635, y: containerHeight * 0.24 },
     }
 
     const waterNodes = Object.keys(waterCoordinates);
-    const circleNumbers = [1, 1, 3, 1];
+    const circleNumbers = [1, 1, 1, 3, 1];
     const radiusPercentage = 1.5;
     const fontSizePercentage = 3;
 
