@@ -1,10 +1,11 @@
 function parkingShow() {
+    visualizePath();
     const svg = document.getElementById('map-svg');
     svg.innerHTML = '';  // Clear previous visualization
     const mapContainer = document.getElementById('map-container');
     const containerWidth = mapContainer.clientWidth;
     const containerHeight = mapContainer.clientHeight;
-    const toiletCoordinates = {
+    const parkingCoordinates = {
         'parking-b4l': { x: containerWidth * 0.36, y: containerHeight * 0.48 },
         'parking-b4r': { x: containerWidth * 0.39, y: containerHeight * 0.48 },
         'parking-b8': { x: containerWidth * 0.545, y: containerHeight * 0.5 },
@@ -22,22 +23,24 @@ function parkingShow() {
         'parking-b6b': { x: containerWidth * 0.48, y: containerHeight * 0.3 },
         'parking-a3a': { x: containerWidth * 0.572, y: containerHeight * 0.6 },
         'parking-b5': { x: containerWidth * 0.43, y: containerHeight * 0.3 },
+        'parking-c5': {x: containerWidth * 0.64,y: containerHeight * 0.13},
+        'parking-c6': {x: containerWidth * 0.64,y: containerHeight * 0.07},
     }
 
-    const toiletNodes = Object.keys(toiletCoordinates);
-    const circleNumbers = [3, 5, 5, 7, 9, 9, 9, 9, 9, 9, 9, 7, 7, 3, 4, 16, 7];
+    const parkingNodes = Object.keys(parkingCoordinates);
+    const circleNumbers = [3, 5, 5, 7, 9, 9, 9, 9, 9, 9, 9, 7, 7, 3, 4, 16, 7, 2, 3];
     const radiusPercentage = 2;
     const fontSizePercentage = 3.5;
 
-    for (let i = 0; i < toiletNodes.length; i++) {
-        const toiletNode = toiletNodes[i];
+    for (let i = 0; i < parkingNodes.length; i++) {
+        const parkingNode = parkingNodes[i];
         const circleNumber = circleNumbers[i];
 
-        createCircleParkToilet(svg, toiletCoordinates[toiletNode].x, toiletCoordinates[toiletNode].y, 'dodgerblue', radiusPercentage, circleNumber.toString(), fontSizePercentage);
+        createCircleButtons(svg, parkingCoordinates[parkingNode].x, parkingCoordinates[parkingNode].y, 'dodgerblue', radiusPercentage, circleNumber.toString(), fontSizePercentage);
     }
 }
 
-function createCircleParkToilet(svg, x, y, color, radiusPercentage, text, fontSizePercentage) {
+function createCircleButtons(svg, x, y, color, radiusPercentage, text, fontSizePercentage) {
     // Convert percentage radius to an absolute value
     const containerWidth = svg.clientWidth;
     const containerHeight = svg.clientHeight;

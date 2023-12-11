@@ -6,7 +6,7 @@ function getLocation() {
                 const longitude = position.coords.longitude;
                 //these 2 lines below is for testing
                 // latitude = 10.773832796366763;
-                // longitude = 106.65923044859811;
+                // longitude = 106.65923044859811; //b6left
                 // document.getElementById("coordinates").textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
 
 

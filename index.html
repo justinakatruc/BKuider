@@ -33,6 +33,8 @@
   <script type="text/javascript" src="/inout.js"></script>
   <script type="text/javascript" src="/toilet.js"></script>
   <script type="text/javascript" src="/parking.js"></script>
+  <script type="text/javascript" src="/automachine.js"></script>
+  <script type="text/javascript" src="/water.js"></script>
 </head>
 <body>
   <div class="rotate-message hidden">
@@ -54,12 +56,6 @@
       <option class="option" value="Raining"><b>Raining</b></option>
     </select>
     <button type="submit" class="btn" id="go">Go</button> 
-    <button class="toilet" id="toilet" onclick="toiletShow()">
-      <img id="toileticon" src="/images/toilet.png" alt="Toilet Icon">
-    </button>
-    <button class="parkinglot" id="parking" onclick="parkingShow()" alt="Parking Lot button">
-      <img id="parkingicon" src="/images/parking.png" alt="Parking Lot Icon">
-    </button>
     <b class="contact">Contact: truc.nguyenminh@hcmut.edu.vn</b>
   </div>
   
@@ -67,18 +63,33 @@
     <img class="map" alt="sa ban truong" src="images/map.png"/>
     <svg class="map" id="map-svg"></svg>
     <button class="info">BKUIDER-CC25</button>
-    <button class="goBack" onclick="goBack()"><img id="returnicon" src="images/sense.png"></button>
     <button class="refreshGPS" onclick="visualizePath()"><img id="refreshicon" src="images/refreshgps.png"></button>
     <p class="source">Image credit.: Ho Chi Minh City University of Technology</p>
+    <div class="buttonboxes" id="button-container">
+      <button class="toilet" id="toilet" onclick="toiletShow()">
+        <img id="toileticon" src="/images/toilet.png" alt="Toilet Icon">
+      </button>
+      <button class="parkinglot" id="parking" onclick="parkingShow()" alt="Parking Lot button">
+        <img id="parkingicon" src="/images/parking.png" alt="Parking Lot Icon">
+      </button>
+      </button>
+      <button class="automachine" id="automachine" onclick="automachineShow()" alt="automachine button">
+        <img id="automachineicon" src="/images/automachine.png" alt="automachine Icon">
+      </button>
+      <button class="water" id="water" onclick="waterShow()" alt="water button">
+        <img id="watericon" src="/images/water.png" alt="water Icon">
+      </button>
+    </div>
   </div>
-  <script>
+  <button class="goBack" onclick="goBack()"><img id="returnicon" src="images/sense.png"></button>
+  <!-- <script>
     document.addEventListener("keydown", e => {
       if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode != 116 && e.keyCode <= 123)) {
         e.stopPropagation();
         e.preventDefault();
       }
     })
-  </script>
+  </script> -->
   <!-- <div class = "noteicon" id="noteicon-container">
     <b id="noteicon-mess">Start</b>
     <svg id="noteicon-svg"></svg>

@@ -343,37 +343,37 @@ function visualizePath() {
 
 		//vertical
 		//floor1
-		'b2-101':{x:containerWidth*0.302,y:containerHeight*0.645},
-		'b2-102':{x:containerWidth*0.302,y:containerHeight*0.665},
-		'b2-102a':{x:containerWidth*0.302,y:containerHeight*0.675},
-		'b2-103':{x:containerWidth*0.302,y:containerHeight*0.72},
-		'b2-104':{x:containerWidth*0.302,y:containerHeight*0.764},
-		'b2-105':{x:containerWidth*0.302,y:containerHeight*0.785},
+		'b2-101':{x:containerWidth*0.305,y:containerHeight*0.645},
+		'b2-102':{x:containerWidth*0.304,y:containerHeight*0.665},
+		'b2-102a':{x:containerWidth*0.303,y:containerHeight*0.675},
+		'b2-103':{x:containerWidth*0.3015,y:containerHeight*0.72},
+		'b2-104':{x:containerWidth*0.3,y:containerHeight*0.764},
+		'b2-105':{x:containerWidth*0.299,y:containerHeight*0.785},
 		//floor2
-		'b2-201a':{x:containerWidth*0.302,y:containerHeight*0.645},
-		'b2-201':{x:containerWidth*0.302,y:containerHeight*0.655},
-		'b2-202':{x:containerWidth*0.302,y:containerHeight*0.665},
-		'b2-203':{x:containerWidth*0.302,y:containerHeight*0.675},
-		'b2-204':{x:containerWidth*0.302,y:containerHeight*0.72},
-		'b2-205':{x:containerWidth*0.302,y:containerHeight*0.75},
-		'b2-206':{x:containerWidth*0.302,y:containerHeight*0.772},
-		'b2-207':{x:containerWidth*0.302,y:containerHeight*0.785},
+		'b2-201a':{x:containerWidth*0.305,y:containerHeight*0.65},
+		'b2-201':{x:containerWidth*0.304,y:containerHeight*0.665},
+		'b2-202':{x:containerWidth*0.303,y:containerHeight*0.68},
+		'b2-203':{x:containerWidth*0.302,y:containerHeight*0.695},
+		'b2-204':{x:containerWidth*0.301,y:containerHeight*0.72},
+		'b2-205':{x:containerWidth*0.3,y:containerHeight*0.75},
+		'b2-206':{x:containerWidth*0.299,y:containerHeight*0.772},
+		'b2-207':{x:containerWidth*0.298,y:containerHeight*0.785},
 		//floor3
-		'b2-301a':{x:containerWidth*0.302,y:containerHeight*0.645},
-		'b2-301':{x:containerWidth*0.302,y:containerHeight*0.655},
-		'b2-302':{x:containerWidth*0.302,y:containerHeight*0.665},
-		'b2-303':{x:containerWidth*0.302,y:containerHeight*0.675},
-		'b2-304':{x:containerWidth*0.302,y:containerHeight*0.72},
-		'b2-305':{x:containerWidth*0.302,y:containerHeight*0.75},
-		'b2-306':{x:containerWidth*0.302,y:containerHeight*0.772},
-		'b2-307':{x:containerWidth*0.302,y:containerHeight*0.785},
+		'b2-301':{x:containerWidth*0.305,y:containerHeight*0.65},
+		'b2-302':{x:containerWidth*0.304,y:containerHeight*0.675},
+		'b2-303':{x:containerWidth*0.303,y:containerHeight*0.7},
+		'b2-304':{x:containerWidth*0.301,y:containerHeight*0.72},
+		'b2-305':{x:containerWidth*0.3,y:containerHeight*0.75},
+		'b2-306':{x:containerWidth*0.299,y:containerHeight*0.772},
+		'b2-307':{x:containerWidth*0.298,y:containerHeight*0.785},
 		//floor4
-		'b2-401':{x:containerWidth*0.302,y:containerHeight*0.658},
-		'b2-402':{x:containerWidth*0.302,y:containerHeight*0.677},
-		'b2-403':{x:containerWidth*0.302,y:containerHeight*0.72},
-		'b2-404':{x:containerWidth*0.302,y:containerHeight*0.75},
-		'b2-405':{x:containerWidth*0.302,y:containerHeight*0.772},
-		'b2-406':{x:containerWidth*0.302,y:containerHeight*0.785},
+		'b2-401a':{x:containerWidth*0.305,y:containerHeight*0.658},
+		'b2-401':{x:containerWidth*0.304,y:containerHeight*0.677},
+		'b2-402':{x:containerWidth*0.303,y:containerHeight*0.69},
+		'b2-403':{x:containerWidth*0.301,y:containerHeight*0.72},
+		'b2-404':{x:containerWidth*0.3,y:containerHeight*0.75},
+		'b2-405':{x:containerWidth*0.299,y:containerHeight*0.772},
+		'b2-406':{x:containerWidth*0.298,y:containerHeight*0.785},
 		
 		//a4
 		//ground
@@ -674,7 +674,7 @@ function visualizePath() {
 		'b11-204':{x:containerWidth*0.6107,y:containerHeight*0.4385},
 	};
 
-	// const pathNodes = ['3l','b5-a','b5-b','b5-c','b5-d','b5-e'];
+	// const pathNodes = ['b2-401','b2-402'];
 	// drawPath (pathNodes);
 
 
@@ -712,7 +712,9 @@ function visualizePath() {
 				drawPath(pathNodes);
 			}
 			else if (inputresult === '' && destination === '') {
-				alert("Please, at least type in your destination in the End box");
+				const pathNodes = resultArray;
+				console.log(pathNodes);
+				drawCurrentNode(pathNodes);
 			}
 		})
 	}
@@ -722,7 +724,12 @@ function visualizePath() {
 	else if (destination !== '') {
 		alert("Sorry, we don't have any data for your destination");
 	}
-	
+	function drawCurrentNode(pathNodes) {
+		const currentNode = pathNodes[0];
+		const currentCircle = createCircle(nodeCoordinates[currentNode].x, nodeCoordinates[currentNode].y, 'dodgerblue');
+		svg.appendChild(currentCircle);
+
+	}
 	function drawPath(pathNodes) {
 		for (let i = 0; i < pathNodes.length - 1; i++) {
 			const startNode = pathNodes[i];

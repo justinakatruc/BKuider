@@ -26,27 +26,12 @@ transformGo.addEventListener('click', function () {
 	}
 });
 
-let toiletClicked = false;
-
-const transformToilet = document.getElementById('toilet');
-
-transformToilet.addEventListener('click', function () {
-  toiletClicked = true;
-});
-
-let parkingClicked = false;
-
-const transformParking = document.getElementById('parking');
-
-transformParking.addEventListener('click', function () {
-  parkingClicked = true;
-});
-
+let goBackClicked = false;
 
 //hide and visualize panel and map
 function visual() {
 	const inputEnd = end();
-	if (inputEnd !== '' || parkingClicked || toiletClicked) {
+	if (inputEnd !== '') {
 		// Add the 'hidden' class to .panel
 		document.querySelector('.panel').classList.remove('visible');
 		document.querySelector('.panel').classList.add('hidden');
@@ -54,7 +39,7 @@ function visual() {
 		document.querySelector('.rotate-message').classList.remove('hidden');
 
 		const inputresult = starti()
-		if (inputresult === '' && !parkingClicked && !toiletClicked) {
+		if (inputresult === '') {
 			document.querySelector('.refreshGPS').classList.remove('hidden');
 			document.querySelector('.refreshGPS').classList.add('visible');
 		}
@@ -67,6 +52,7 @@ function visual() {
 		document.querySelector('.map').classList.remove('hidden');
 		document.querySelector('.map').classList.add('visible');
 	}
+	goBackClicked = true;
 }
 
 const hide = document.getElementById('go');
@@ -77,11 +63,22 @@ toilet.addEventListener('click', visual);
 parking.addEventListener('click', visual);
 
 function goBack() {
-	document.querySelector('.panel').classList.remove('hidden');
-	document.querySelector('.panel').classList.add('visible');
-
-	document.querySelector('.map').classList.remove('visible');
-	document.querySelector('.map').classList.add('hidden');
+	if (goBackClicked == true) {
+		document.querySelector('.panel').classList.remove('hidden');
+		document.querySelector('.panel').classList.add('visible');
+	
+		document.querySelector('.map').classList.remove('visible');
+		document.querySelector('.map').classList.add('hidden');
+		goBackClicked = false;
+	}
+	else {
+		document.querySelector('.panel').classList.remove('visible');
+		document.querySelector('.panel').classList.add('hidden');
+	
+		document.querySelector('.map').classList.remove('hidden');
+		document.querySelector('.map').classList.add('visible');
+		goBackClicked = true;
+	}
 }
 
 
@@ -102,17 +99,5 @@ screen. orientation. addEventListener("change", function(e) {
 	}
 	else if (portrait && goClicked) {
 		goClicked = false;
-	}
-	if (landscape && toiletClicked) {
-		toiletShow();
-	}
-	else if (portrait && toiletClicked) {
-		toiletClicked = false;
-	}
-	if (landscape && parkingClicked) {
-		parkingShow();
-	}
-	else if (portrait && parkingClicked) {
-		parkingClicked = false;
 	}
 });
