@@ -343,6 +343,13 @@
     background-color: beige;
     color: black ;
   }
+  .tutorial {
+    position: relative;
+    top: 5%;
+    color: lightgray;
+    opacity: 0.6;
+  }
+
 
   /* button-container */
   .buttonboxes {

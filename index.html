@@ -43,11 +43,11 @@
   <div class="panel">
     <img class="logo" src="/images/logo.png">
     <label>
-      <input class="start" id="start" type="text" placeholder="Start" oninput="suggestStart()">
+      <input class="start" id="start" type="text" placeholder="Your Location" oninput="suggestStart()">
     </label>
     <div id="suggestionsStart"></div>
     <label>
-      <input class="end" id="end" type="text" placeholder="End" oninput="suggestEnd()">
+      <input class="end" id="end" type="text" placeholder="Destination" oninput="suggestEnd()">
     </label>
     <div id="suggestionsEnd"></div>
     <select class="weather" id="weather" onchange="weather()">
@@ -56,6 +56,8 @@
       <option class="option" value="Raining"><b>Raining</b></option>
     </select>
     <button type="submit" class="btn" id="go">Go</button> 
+    <br>
+    <b class="tutorial">Our map is the key to your journey</b>
     <b class="contact">Contact: truc.nguyenminh@hcmut.edu.vn</b>
   </div>
   
