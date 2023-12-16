@@ -730,8 +730,15 @@ function visualizePath() {
 		svg.appendChild(currentCircle);
 
 	}
-	function drawPath(pathNodes) {
+	async function drawPath(pathNodes) {
+		const startNode = pathNodes[0];
+		const endNode = pathNodes[pathNodes.length - 1];
+		const startCircle = createCircle(nodeCoordinates[startNode].x, nodeCoordinates[startNode].y, 'dodgerblue');
+		const endCircle = createCircle(nodeCoordinates[endNode].x, nodeCoordinates[endNode].y, 'seagreen');
+		
 		for (let i = 0; i < pathNodes.length - 1; i++) {
+			await new Promise(resolve => setTimeout(resolve, 100));
+			
 			const startNode = pathNodes[i];
 			const endNode = pathNodes[i + 1];
 			const startX = nodeCoordinates[startNode].x;
@@ -811,6 +818,9 @@ function visualizePath() {
 					// else console.log("nostairc2.2");
 				}
 			}
+			
+			svg.appendChild(startCircle);
+			svg.appendChild(endCircle);
 
 			function drawstair() {
 				const stairNode = pathNodes[i];
@@ -819,12 +829,6 @@ function visualizePath() {
 				svg.appendChild(stairCircle);
 			}
 		}
-		const startNode = pathNodes[0];
-		const endNode = pathNodes[pathNodes.length - 1];
-		const startCircle = createCircle(nodeCoordinates[startNode].x, nodeCoordinates[startNode].y, 'dodgerblue');
-		const endCircle = createCircle(nodeCoordinates[endNode].x, nodeCoordinates[endNode].y, 'seagreen');
-		svg.appendChild(startCircle);
-		svg.appendChild(endCircle);
 	}
 }
 

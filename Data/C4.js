@@ -29,7 +29,7 @@ graph.addVertex("c4-re");
 //entrance
 //ground
 graph.addEdge("9d","c4",5);
-graph.addEdge("10d","c4",5);
+graph.addEdge("10d","c4",10);
 graph.addEdge("9d","c4-le",2);
 graph.addEdge("10d","c4-re",3);
 

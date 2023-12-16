@@ -39,14 +39,14 @@ graph.addVertex("a4-be");
 //groundentrance
 graph.addEdge("4c","a4",7);
 graph.addEdge("7e","a4",5);
-graph.addEdge("4c","a4-fe",7);
+graph.addEdge("4c","a4-fe",9);
 graph.addEdge("7e","a4-fe",5);
 graph.addEdge("7c","a4-be",3);
 graph.addEdge("5b","a4-be",6);
 
 graph.addEdge("a4-fe","a4-fs",1);
 graph.addEdge("a4-fe","a4-hta4",3);
-graph.addEdge("a4-fe","a4-be",5);
+graph.addEdge("a4-fe","a4-be",8);
 graph.addEdge("a4-be","a4-108",1);
 graph.addEdge("a4-be","a4-bs",1);
 

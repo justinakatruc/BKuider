@@ -2,7 +2,7 @@
 
 @media (orientation: portrait) {
   body {
-    background: #233053;
+    background: linear-gradient(to right, #233053, #233053);
   }
   :root {
     --background-light: #f7f7f7;
