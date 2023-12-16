@@ -838,7 +838,7 @@ function createCircle(x, y, color) {
   const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
   circle.setAttribute('cx', x);
   circle.setAttribute('cy', y);
-  circle.setAttribute('r', 7);  // Adjust the radius as needed
+  circle.setAttribute('r', 7);
   circle.setAttribute('fill', color);
   circle.setAttribute('stroke', 'lightcyan');
   circle.setAttribute('stroke-width', 2);

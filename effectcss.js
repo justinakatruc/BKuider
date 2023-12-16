@@ -53,14 +53,11 @@ function visual() {
 		document.querySelector('.map').classList.add('visible');
 	}
 	goBackClicked = true;
+	document.getElementById('button-container').classList.toggle('slideUp');
 }
 
 const hide = document.getElementById('go');
-const toilet = document.getElementById('toilet');
-const parking = document.getElementById('parking');
 hide.addEventListener('click', visual);
-toilet.addEventListener('click', visual);
-parking.addEventListener('click', visual);
 
 function goBack() {
 	if (goBackClicked == true) {
@@ -79,6 +76,7 @@ function goBack() {
 		document.querySelector('.map').classList.add('visible');
 		goBackClicked = true;
 	}
+	document.getElementById('button-container').classList.toggle('slideUp');
 }
 
 

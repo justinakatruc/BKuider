@@ -35,6 +35,7 @@ function toiletShow() {
         'toilet-b3-m': {x:containerWidth*0.212,y:containerHeight*0.473},        //1
         'toilet-b3-fm': {x:containerWidth*0.211,y:containerHeight*0.48},        //1
         'toilff-b6-m': {x:containerWidth*0.4,y:containerHeight*0.35},           //1
+        'toilff-b6-fm': {x:containerWidth*0.403,y:containerHeight*0.35},        //1
         'toilef-b6-m': {x:containerWidth*0.454,y:containerHeight*0.3},          //1
         'toilef-b6-fm': {x:containerWidth*0.457,y:containerHeight*0.3},         //1
         'toiler-b6-m': {x:containerWidth*0.472,y:containerHeight*0.295},        //1
@@ -55,7 +56,7 @@ function toiletShow() {
         const regex1 = /^[a-z]{6}-[a-z]\d{2}-m$/
         const match = toiletNodes[i].match(regex);
         const match1 = toiletNodes[i].match(regex1);
-        const circleNumbers = [4, 4, 2, 2, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5];
+        const circleNumbers = [4, 4, 2, 2, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5];
         const radiusPercentage = 1.5;
         const fontSizePercentage = 3;
     

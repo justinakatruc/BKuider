@@ -14,7 +14,7 @@ function waterShow() {
     }
 
     const waterNodes = Object.keys(waterCoordinates);
-    const circleNumbers = [1, 1, 1, 3, 1];
+    const circleNumbers = [1, 1, 2, 3, 1];
     const radiusPercentage = 1.5;
     const fontSizePercentage = 3;
 
