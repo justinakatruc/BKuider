@@ -52,8 +52,8 @@ graph.addEdge("c6-le","c6-103",5);
 
 graph.addEdge("c6-103","c6-104",1);
 graph.addEdge("c6-104","c6-105",1);
-graph.addEdge("c6-104","c6-ls",1);
-graph.addEdge("c6-105","c6-ls",1);
+graph.addEdge("c6-104","c6-ls",4);
+graph.addEdge("c6-105","c6-ls",2);
 
 graph.addEdge("c6-le","c6-102",1);
 graph.addEdge("c6-102","c6-101",1);
@@ -63,7 +63,7 @@ graph.addEdge("c6-101","c6-rs",2);
 graph.addEdge("c6-102","c6-103",1);
 
 //floor2
-graph.addEdge("c6-ls","c6-208",1);
+graph.addEdge("c6-ls","c6-208",4);
 graph.addEdge("c6-208","c6-207",1);
 graph.addEdge("c6-207","c6-206",1);
 graph.addEdge("c6-206","c6-205",1);
@@ -74,7 +74,7 @@ graph.addEdge("c6-202","c6-201",1);
 graph.addEdge("c6-201","c6-rs",1);
 
 //floor3
-graph.addEdge("c6-ls","c6-309",1);
+graph.addEdge("c6-ls","c6-309",8);
 graph.addEdge("c6-309","c6-308",1);
 graph.addEdge("c6-308","c6-307",1);
 graph.addEdge("c6-307","c6-306",1);
@@ -86,19 +86,19 @@ graph.addEdge("c6-302","c6-301",1);
 graph.addEdge("c6-301","c6-rs",1);
 
 //floor4
-graph.addEdge("c6-ls","c6-403",2);
+graph.addEdge("c6-ls","c6-403",16);
 graph.addEdge("c6-403","c6-402",2);
 graph.addEdge("c6-402","c6-401",2);
 graph.addEdge("c6-401","c6-rs",2);
 
 //floor5
-graph.addEdge("c6-ls","c6-503",2);
+graph.addEdge("c6-ls","c6-503",32);
 graph.addEdge("c6-503","c6-502",2);
 graph.addEdge("c6-502","c6-501",2);
 graph.addEdge("c6-501","c6-rs",2);
 
 //floor6
-graph.addEdge("c6-ls","c6-604",1);
+graph.addEdge("c6-ls","c6-604",64);
 graph.addEdge("c6-604","c6-603",1);
 graph.addEdge("c6-603","c6-602",1);
 graph.addEdge("c6-602","c6-601",1);
