@@ -1,5 +1,3 @@
-
-
 @media (orientation: portrait) {
   body {
     background: linear-gradient(to right, #233053, #233053);
@@ -183,6 +181,7 @@
   {
     width: auto;
     background: #233053;
+    overflow: hidden;
   }
   .rotate-message {
     display: none;
@@ -513,7 +512,6 @@
 
   /* mapvisual */
   .map.hidden {
-    display: none;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
@@ -534,33 +532,3 @@
     pointer-events: auto;
   }
 }
-
-
-/* .noteicon {
-    position: absolute;
-    background-color: green;
-    top: 4%;
-    bottom: 4%;
-    right: 83%;
-    left: 0;
-    border-radius: 10px;
-    z-index: 0;
-  }
-  #noteicon-mess {
-    position: absolute;
-    top: 26%;
-    left: 55%;
-  } */
-  /* .stair {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    position: relative;
-    background-color: yellow;
-    border: 5px;
-    border: 2px solid lightcyan;
-    border-radius: 50%;
-    margin-left: 60%;
-    margin-top: 20%;
-    z-index: 10;
-  } */
