@@ -84,20 +84,6 @@
     </div>
   </div>
   <button class="goBack" onclick="goBack()"><img id="returnicon" src="images/sense.png"></button>
-  <script>
-    document.addEventListener("keydown", e => {
-      if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode != 116 && e.keyCode <= 123)) {
-        e.stopPropagation();
-        e.preventDefault();
-      }
-    })
-  </script>
-  <!-- <div class = "noteicon" id="noteicon-container">
-    <b id="noteicon-mess">Start</b>
-    <svg id="noteicon-svg"></svg>
-  </div> -->
-  <!-- <button class="getLocationBtn" id="getLocationBtn" type="button">Get My Location</button> -->
-  <!-- <div class="test" id="coordinates">Latitude: N/A, Longitude: N/A</div> -->
   <script src="/location.js"></script>
   <script src="/script.js"></script>
   <script src="/effectcss.js"></script>
